@@ -83,7 +83,8 @@ button:hover {
   margin: 16px;
 }
 
-.welcom-text-homepage {
+.welcom-text-homepage,
+.info-food-text-homepage {
   margin: 100px 16px;
 }
 
@@ -152,6 +153,10 @@ button:hover {
 .blog-post-card p {
   margin: 0;
   padding: 16px;
+}
+
+.sircel-for-carousel-box button {
+  border-radius: 30px;
 }
 
 .sircel-for-carousel-box {

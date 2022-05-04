@@ -111,6 +111,11 @@ i {
     height: 400px;
   }
 
+  footer p {
+    font-size: 12px;
+    padding: 2px;
+  }
+
   .content-footer {
     flex-direction: column;
   }
