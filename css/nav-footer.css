@@ -1,7 +1,17 @@
 /* Nav*/
-.logo svg {
-  width: 100px;
+
+.logo-desktop svg {
+  height: 80px;
   padding: 8px;
+}
+
+.logo-footer svg {
+  height: 80px;
+  padding: 16px;
+}
+
+.logo-mobile svg {
+  display: none;
 }
 
 nav {
@@ -70,10 +80,22 @@ i {
   cursor: pointer;
 }
 
+footer p {
+  color: #000000;
+}
+
 @media (max-width: 600px) {
   nav {
     background-color: var(--main-green-colour);
     padding: 0 16px;
+  }
+
+  .logo-desktop svg {
+    display: none;
+  }
+
+  .logo-mobile svg {
+    display: flex;
   }
 
   #mobile-menu-btn {

@@ -14,20 +14,23 @@ h4,
 h5 {
   font-family: "Roboto Slab", serif;
   font-size: 20px;
-  color: #444444;
+  color: var(--main-letter-colour);
 }
 
 p,
 a {
   font-family: "Mukta Vaani", sans-serif;
   font-size: 18px;
-  color: #444444;
+  color: var(--main-letter-colour);
 }
 
 :root {
+  --main-letter-colour: #444444;
   --main-green-colour: #68a691;
+  --main-green-light-colour: #cedfda;
   --main-yellow-color: #ffd670;
-  --main-pink-color: #ff70a6;
+  --main-pink-color: #c2949e;
+  --main-dark-colour: #868181;
   /*--gradient:*/
 }
 
@@ -47,28 +50,55 @@ a:hover {
 }
 
 button {
-  padding: 16px 32px;
-  border: 2px solid var(--main-pink-color);
+  padding: 8px 16px;
+  border: 2px solid var(--main-dark-colour);
   box-sizing: border-box;
   text-decoration: none;
-  color: #d07a8d;
+  color: #444444;
   text-align: center;
   transition: all 0.2s;
-  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 27px #0000004d;
   font-family: "Roboto Slab", serif;
   font-size: 16px;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: #fff;
   margin: 16px;
 }
 
 button:hover {
   color: #ffffff;
-  background-color: #d07a8d;
+  background-color: var(--main-green-colour);
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  color: var(--main-letter-colour);
+  font-family: "Roboto Slab", serif;
+}
+
+input {
+  padding: 4px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid var(--main-green-colour);
+  margin: 4px;
+}
+
+input[type="text"]:focus {
+  border: 1px solid var(--main-pink-color);
+}
+
+/*homepage*/
 
 .herobanner-background-image-homepage {
   background-image: url("/image/herobanner-homepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 600px;
   background-position: 20% 80%;
 }
@@ -84,12 +114,14 @@ button:hover {
 }
 
 .welcom-text-homepage,
-.info-food-text-homepage {
+.info-food-text-homepage,
+.travel-hackes-homepage-text {
   margin: 100px 16px;
 }
 
-.image-carousel-box {
-  background-color: #9dd3c1;
+.image-carousel-box,
+.subscribe-box-homepage {
+  background-color: var(--main-green-light-colour);
 }
 
 .image-carousel-box h2 {
@@ -106,16 +138,15 @@ button:hover {
 .border-green,
 .border-yellow {
   border-radius: 15px;
+  padding: 8px;
 }
 
 .border-yellow {
   border: 2px solid var(--main-yellow-color);
-  padding: 16px;
 }
 
 .border-green {
   border: 2px solid var(--main-green-colour);
-  padding: 16px;
   margin: 8px;
 }
 
@@ -127,7 +158,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   background-color: aliceblue;
-  border: 2px solid #68a691;
+  border: 2px solid var(--main-green-colour);
   border-radius: 15px;
   margin: 8px;
 }
@@ -185,6 +216,50 @@ button:hover {
   background: var(--main-green-colour);
 }
 
+.subscribe-newsletter-homepage {
+  height: 280px;
+  background-color: var(--main-green-light-colour);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subscribe-newsletter-content {
+  flex-direction: column;
+  margin: 16px auto;
+  padding: 8px;
+}
+
+.subscribe-newsletter-content form button {
+  width: 150px;
+  margin: 8px auto;
+}
+
+.subscribe-newsletter-content h2,
+.subscribe-newsletter-content p {
+  text-align: center;
+  margin: 0;
+}
+
+.subscribe-newsletter-content h2 {
+  font-family: "Amaranth", sans-serif;
+  font-size: 50px;
+  margin: 0;
+  padding: 4px;
+}
+
+.subscribe-newsletter-content p {
+  color: var(--main-letter-colour);
+  margin: 0;
+  padding: 2px;
+}
+
+.error-input-name {
+  color: #ff0000;
+  font-size: 8px;
+  display: none;
+}
+
 @media (min-width: 426px) {
   .blog-post-card img {
     height: 400px;
@@ -194,6 +269,11 @@ button:hover {
 @media (min-width: 650px) {
   .herobanner-text h1 {
     font-size: 50px;
+  }
+
+  .border-green,
+  .border-yellow {
+    padding: 16px;
   }
 }
 
