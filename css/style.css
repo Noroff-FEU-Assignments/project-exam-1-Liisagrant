@@ -1,5 +1,6 @@
 * {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -27,7 +28,7 @@ a {
 :root {
   --main-letter-colour: #444444;
   --main-green-colour: #68a691;
-  --main-green-light-colour: #cedfda;
+  --main-green-light-colour: #d0e9e2;
   --main-yellow-color: #ffd670;
   --main-pink-color: #c2949e;
   --main-dark-colour: #868181;
@@ -83,14 +84,10 @@ label {
 
 input {
   padding: 4px;
-  width: 300px;
+  width: 280px;
   border-radius: 5px;
   border: 1px solid var(--main-green-colour);
   margin: 4px;
-}
-
-input[type="text"]:focus {
-  border: 1px solid var(--main-pink-color);
 }
 
 /*homepage*/
@@ -108,6 +105,7 @@ input[type="text"]:focus {
 }
 
 .herobanner-text h1 {
+  font-family: "Oleo Script Swash Caps", cursive;
   font-size: 30px;
   color: #ffffff;
   margin: 16px;
@@ -150,6 +148,21 @@ input[type="text"]:focus {
   margin: 8px;
 }
 
+.blog-post-image-box {
+  position: relative;
+}
+
+.text-box-carousel {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #fff;
+  color: #ffffff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 100%;
+}
+
 .blog-post-card {
   display: flex;
 }
@@ -163,16 +176,14 @@ input[type="text"]:focus {
   margin: 8px;
 }
 
-.blog-post-card {
+.blog-post-card:hover {
   transform: scale(1.04);
   transition: 1s;
 }
 
 .blog-post-card img {
-  padding: 8px;
-  margin: 16px auto;
   border-radius: 15px;
-  height: 250px;
+  height: 400px;
   width: 100%;
 }
 
@@ -184,6 +195,10 @@ input[type="text"]:focus {
 .blog-post-card p {
   margin: 0;
   padding: 16px;
+}
+
+.blog-post-card p {
+  display: none;
 }
 
 .sircel-for-carousel-box button {
@@ -217,11 +232,12 @@ input[type="text"]:focus {
 }
 
 .subscribe-newsletter-homepage {
-  height: 280px;
+  height: 320px;
   background-color: var(--main-green-light-colour);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .subscribe-newsletter-content {
@@ -262,7 +278,11 @@ input[type="text"]:focus {
 
 @media (min-width: 426px) {
   .blog-post-card img {
-    height: 400px;
+    height: 500px;
+  }
+
+  .blog-post-card p {
+    display: flex;
   }
 }
 
@@ -279,6 +299,6 @@ input[type="text"]:focus {
 
 @media (min-width: 767px) {
   .blog-post-card img {
-    height: 500px;
+    height: 600px;
   }
 }
