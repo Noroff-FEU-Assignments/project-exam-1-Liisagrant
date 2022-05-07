@@ -117,7 +117,6 @@ input {
   margin: 100px 16px;
 }
 
-.image-carousel-box,
 .subscribe-box-homepage {
   background-color: var(--main-green-light-colour);
 }
@@ -133,34 +132,16 @@ input {
   align-items: center;
 }
 
-.border-green,
-.border-yellow {
-  border-radius: 15px;
-  padding: 8px;
-}
-
-.border-yellow {
-  border: 2px solid var(--main-yellow-color);
-}
-
-.border-green {
-  border: 2px solid var(--main-green-colour);
-  margin: 8px;
-}
-
 .blog-post-image-box {
   position: relative;
 }
 
 .text-box-carousel {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background-color: #fff;
-  color: #ffffff;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  bottom: 0;
   width: 100%;
+  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .blog-post-card {
@@ -171,7 +152,6 @@ input {
   flex-direction: column;
   justify-content: center;
   background-color: aliceblue;
-  border: 2px solid var(--main-green-colour);
   border-radius: 15px;
   margin: 8px;
 }
@@ -193,22 +173,20 @@ input {
 
 .blog-post-card h3,
 .blog-post-card p {
-  margin: 0;
-  padding: 16px;
+  padding: 8px;
 }
 
 .blog-post-card p {
-  display: none;
+  font-size: 12px;
 }
 
 .sircel-for-carousel-box button {
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .sircel-for-carousel-box {
   display: flex;
   justify-content: center;
-  padding: 16px;
 }
 
 .carousel-nav {
@@ -224,7 +202,6 @@ input {
   height: 15px;
   background: #e5faf4;
   margin: 0 12px;
-  padding: 0;
 }
 
 .current-slide {
@@ -247,26 +224,22 @@ input {
 }
 
 .subscribe-newsletter-content form button {
-  width: 150px;
   margin: 8px auto;
 }
 
 .subscribe-newsletter-content h2,
 .subscribe-newsletter-content p {
   text-align: center;
-  margin: 0;
 }
 
 .subscribe-newsletter-content h2 {
   font-family: "Amaranth", sans-serif;
   font-size: 50px;
-  margin: 0;
   padding: 4px;
 }
 
 .subscribe-newsletter-content p {
   color: var(--main-letter-colour);
-  margin: 0;
   padding: 2px;
 }
 
@@ -284,16 +257,17 @@ input {
   .blog-post-card p {
     display: flex;
   }
+
+  .text-box-carousel {
+    position: absolute;
+    bottom: 100px;
+    width: 450px;
+  }
 }
 
 @media (min-width: 650px) {
   .herobanner-text h1 {
     font-size: 50px;
-  }
-
-  .border-green,
-  .border-yellow {
-    padding: 16px;
   }
 }
 
