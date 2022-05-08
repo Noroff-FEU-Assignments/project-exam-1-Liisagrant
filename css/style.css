@@ -112,7 +112,7 @@ input {
 }
 
 .welcom-text-homepage,
-.info-food-text-homepage,
+.subscribe-newsletter-homepage,
 .travel-hackes-homepage-text {
   margin: 100px 16px;
 }
@@ -261,7 +261,7 @@ input {
   .text-box-carousel {
     position: absolute;
     bottom: 100px;
-    width: 450px;
+    width: 400px;
   }
 }
 

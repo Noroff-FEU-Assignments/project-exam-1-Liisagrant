@@ -1,12 +1,20 @@
 /* Nav*/
+.logo svg {
+  height: 80px;
+  width: 80px;
+  padding-top: 8px;
+}
+
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
   color: #000000;
   height: 80px;
   background-color: transparent;
+  margin: 0 2px;
 }
 
 nav form {
@@ -14,8 +22,13 @@ nav form {
   flex-direction: row;
 }
 
+.box-search-desktop input {
+  display: none;
+}
+
+.box-search-desktop,
 .box-search {
-  width: 250px;
+  /*width: 200px;*/
   height: 40px;
   background-color: transparent;
   border: none;
@@ -25,12 +38,15 @@ nav form {
   padding: 20px;
 }
 
+.box-search-desktop i,
 .box-search i {
   font-size: 16px;
   color: #000000;
 }
 
+.box-search-desktop input,
 .box-search input {
+  /*display: block;*/
   flex: 1;
   height: 32px;
   background: transparent;
@@ -39,12 +55,14 @@ nav form {
   border: 2px solid #000000;
 }
 
+.box-search-desktop input::placeholder,
 .box-search input::placeholder {
   color: #000000;
   font-family: "Mukta Vaani", sans-serif;
   font-size: 10px;
 }
 
+.box-search-desktop:focus,
 .box-search input:focus {
   outline: none;
   box-shadow: 0 0 0 2px #000000;
@@ -149,6 +167,21 @@ footer p {
     padding: 16px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  .box-search-desktop {
+    display: none;
+  }
+
+  .logo svg {
+    height: 80px;
+    width: 90px;
+    padding: 10px 0 0 10px;
+  }
+
+  .box-search input {
+    display: block;
   }
 
   #mobile-menu-btn {
@@ -169,7 +202,7 @@ footer p {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 160px;
+    height: 200px;
     background-color: var(--main-green-colour);
   }
 
