@@ -164,7 +164,7 @@
   display: none;
 }
 
-@media (min-width: 426px) {
+@media screen and (min-width: 426px) {
   .blog-post-card img {
     height: 500px;
   }
@@ -180,13 +180,13 @@
   }
 }
 
-@media (min-width: 650px) {
+@media screen and (min-width: 650px) {
   .herobanner-text h1 {
     font-size: 50px;
   }
 }
 
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   .blog-post-card img {
     height: 600px;
   }
