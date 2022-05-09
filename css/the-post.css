@@ -40,6 +40,11 @@ header {
   margin: 16px;
 }
 
+.author-name p {
+  text-align: right;
+  margin: 16px;
+}
+
 @media screen and (min-width: 455px) {
   .the-post-box-images-grid {
     --num-cols: 4;
