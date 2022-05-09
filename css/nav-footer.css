@@ -104,7 +104,8 @@ header .links a:hover {
 
 hr {
   border: 1px solid #000000;
-  margin: 2px 40px;
+  margin: 8px auto;
+  max-width: 987px;
 }
 
 /*footer*/
