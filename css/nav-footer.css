@@ -166,7 +166,7 @@ footer p {
   font-family: "Mukta Vaani", sans-serif;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   nav {
     background-color: var(--main-green-colour);
     padding: 16px;

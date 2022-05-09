@@ -32,7 +32,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   border-bottom: 2px solid #68a691;
-  margin: 8px auto;
+  margin: 16px 8px;
 }
 
 .blog-post-box img {
@@ -69,7 +69,18 @@ header {
   color: var(--main-green-colour);
 }
 
-@media (min-width: 450px) {
+.all-blog-posts button {
+  width: 200px;
+  margin: 16px auto;
+}
+
+@media screen and (min-width: 450px) {
+  .blog-post-box img {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 600px) {
   .blog-post-box img {
     width: 500px;
   }
