@@ -120,8 +120,8 @@ footer .container {
 .content-footer {
   display: flex;
   flex-direction: row;
-  padding: 0 8px;
-  justify-content: space-evenly;
+  padding: 16px;
+  justify-content: space-between;
 }
 
 .menu-box,
@@ -130,6 +130,10 @@ footer .container {
   flex-direction: column;
   justify-content: space-around;
   padding: 8px;
+}
+
+.fab::before {
+  padding: 4px;
 }
 
 .menu-box {

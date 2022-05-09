@@ -111,8 +111,11 @@ input {
   margin: 16px;
 }
 
+.subscribe-newsletter-homepage {
+  margin: 100px auto;
+}
+
 .welcom-text-homepage,
-.subscribe-newsletter-homepage,
 .travel-hackes-homepage-text {
   margin: 100px 16px;
 }
