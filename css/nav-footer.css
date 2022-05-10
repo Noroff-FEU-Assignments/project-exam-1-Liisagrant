@@ -203,6 +203,7 @@ footer p {
 
   .mobile-menu {
     display: none;
+    position: absolute;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;

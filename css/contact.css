@@ -1,0 +1,82 @@
+:root {
+  --main-letter-colour: #444444;
+  --main-green-colour: #68a691;
+  --main-green-light-colour: #d0e9e2;
+  --main-yellow-color: #ffd670;
+  --main--error-colour: #962e2e;
+}
+
+header {
+  background-color: var(--main-green-colour);
+}
+
+.section-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.section-contact form p {
+  margin: 4px;
+  font-size: 16px;
+}
+
+.container-form h1 {
+  text-align: center;
+  margin: 8px;
+}
+
+.success {
+  text-align: center;
+  display: none;
+}
+
+.container-form {
+  background-color: var(--main-green-light-colour);
+  margin: 48px 16px;
+  padding: 16px;
+  border-radius: 15px;
+  max-width: 500px;
+  border: 2px solid var(--main-green-colour);
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+}
+
+input {
+  display: inline;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 2px solid var(--main-green-colour);
+  margin: 4px 0 8px 0;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border: 2px solid var(--main-yellow-color);
+}
+
+textarea {
+  height: 150px;
+}
+
+form button {
+  margin: 16px auto;
+  width: 200px;
+}
+
+.error-form {
+  display: none;
+  color: var(--main--error-colour);
+  font-size: 12px;
+}
