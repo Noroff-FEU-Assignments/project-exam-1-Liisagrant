@@ -1,15 +1,10 @@
 :root {
   --main-letter-colour: #444444;
   --main-green-colour: #68a691;
-  --main-green-light-colour: #d0e9e2;
-  --main-yellow-color: #ffd670;
-  --main-pink-color: #c2949e;
-  --main-dark-colour: #868181;
-  /*--gradient:*/
 }
 
 header {
-  background-color: #68a691;
+  background-color: var(--main-green-colour);
 }
 
 .page-title h1 {
@@ -18,7 +13,8 @@ header {
   padding: 32px 16px;
 }
 
-.about-us {
+.about-us-mia,
+.about-us-bob {
   display: flex;
   flex-direction: column;
   margin: 80px 16px;
@@ -29,18 +25,53 @@ header {
   background-color: var(--main-green-colour);
   justify-content: center;
   align-items: center;
-  margin: 16px;
+  margin: auto auto;
+  border-radius: 50%;
 }
 
 .about-us-image-box img {
   height: 200px;
   padding: 16px;
-  border-radius: 15px;
+  border-radius: 50%;
 }
 
-@media screen and (min-width: 768px) {
-  .about-us {
-    display: flex;
+.about-us-mia-text,
+.about-us-what-we-care-about {
+  margin: 16px;
+}
+
+.about-us-mia-text p,
+.about-us-what-we-care-about p {
+  margin: 8px 0;
+}
+
+.about-us-what-we-care-about-img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us-what-we-care-about img {
+  height: 200px;
+  margin: 8px auto;
+}
+
+@media screen and (min-width: 426px) {
+  .about-us-what-we-care-about img {
+    height: 300px;
+    margin: 8px auto;
+  }
+}
+
+@media screen and (min-width: 787px) {
+  .about-us-mia {
+    flex-direction: row;
+  }
+  .about-us-bob {
+    flex-direction: row-reverse;
+  }
+
+  .about-us-what-we-care-about-img-box {
     flex-direction: row;
   }
 }
