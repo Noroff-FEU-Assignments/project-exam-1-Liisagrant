@@ -1,0 +1,35 @@
+:root {
+  --main-letter-colour: #444444;
+  --main-green-colour: #68a691;
+  --main-green-light-colour: #d0e9e2;
+  --main-yellow-color: #ffd670;
+  --main-pink-color: #c2949e;
+  --main-dark-colour: #868181;
+  /*--gradient:*/
+}
+
+header {
+  background-color: #68a691;
+}
+
+.page-title h1 {
+  color: var(--main-letter-colour);
+  font-size: 32px;
+  padding: 32px 16px;
+}
+
+.about-us-mia {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-us-image-box {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  background-color: var(--main-green-colour);
+}
+
+.about-us-image-box img {
+  height: 400px;
+}

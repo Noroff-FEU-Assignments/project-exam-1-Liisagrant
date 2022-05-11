@@ -92,5 +92,6 @@ input {
 
 .this-page {
   border: 2px solid #ffffff;
-  padding: 3px;
+  padding: 4px;
+  border-radius: 15px;
 }
