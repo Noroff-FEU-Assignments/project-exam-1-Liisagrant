@@ -1,8 +1,8 @@
 /* Nav*/
-.logo svg {
-  height: 80px;
-  width: 80px;
-  padding-top: 8px;
+.logo img {
+  height: 70px;
+  justify-content: center;
+  margin-top: 8px;
 }
 
 nav {
@@ -19,7 +19,7 @@ nav {
 
 nav form {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 
 .box-search-desktop input {
@@ -104,7 +104,7 @@ header .links a:hover {
 
 hr {
   border: 1px solid #000000;
-  margin: 8px auto;
+  margin: 0 auto;
   max-width: 987px;
 }
 
@@ -121,7 +121,7 @@ footer .container {
 .content-footer {
   display: flex;
   flex-direction: row;
-  padding: 16px;
+  justify-content: center;
   justify-content: space-between;
 }
 

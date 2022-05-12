@@ -19,7 +19,8 @@
   font-family: "Oleo Script Swash Caps", cursive;
   font-size: 32px;
   color: #ffffff;
-  margin: 350px 16px;
+  margin-top: 350px;
+  text-align: center;
 }
 
 .subscribe-newsletter-homepage {
