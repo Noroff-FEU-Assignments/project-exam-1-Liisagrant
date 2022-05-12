@@ -98,7 +98,15 @@ header .links a:hover {
   border-radius: 3px;
 }
 
-.mobile-menu {
+.mopbile-menu {
+  display: none;
+}
+
+.mobile-menu a {
+  display: none;
+}
+
+.mobile-menu form {
   display: none;
 }
 
@@ -202,7 +210,6 @@ footer p {
   }
 
   .mobile-menu {
-    display: none;
     position: absolute;
     flex-direction: column;
     justify-content: space-around;
@@ -212,8 +219,10 @@ footer p {
     background-color: var(--main-green-colour);
   }
 
-  .mobile-menu a {
+  .mobile-menu a,
+  .mobile-menu form {
     color: #000000;
+    display: inline;
   }
 
   #mobile-menu-btn {
