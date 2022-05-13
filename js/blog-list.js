@@ -26,7 +26,7 @@ const getAllBlogs = async () => {
                             <p></p>
                         </div>
                         <div class="read-more-link">
-                            <a href="the-post.html?id=${blog.id}>Read more</a>
+                            <a href="the-post.html?id=${blog.id}>Read More</a>
                         </div>
                     </div>
                 `;
