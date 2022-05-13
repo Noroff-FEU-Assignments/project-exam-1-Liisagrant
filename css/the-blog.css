@@ -69,9 +69,9 @@ header {
   color: var(--main-green-colour);
 }
 
-.all-blog-posts button {
-  width: 200px;
-  margin: 16px auto;
+.blog-btn {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 450px) {
