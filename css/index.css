@@ -71,14 +71,19 @@
 
 .blog-post-card {
   display: flex;
-}
-
-.blog-post-card {
   flex-direction: column;
   justify-content: center;
   background-color: aliceblue;
   border-radius: 15px;
   margin: 8px;
+}
+
+.slide {
+  width: 100%;
+  max-width: 800px;
+  height: 200px;
+  position: absolute;
+  transition: all 0.5s;
 }
 
 .blog-post-card:hover {
