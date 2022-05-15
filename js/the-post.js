@@ -35,9 +35,6 @@ const getPost = async () => {
                 <article>
                             <p>${post.content.rendered}</p>
                 </article>
-                <div class="author-name">
-                    <p>x Bob</p>
-                </div>
             </div> 
             `;
       document.title = `${post.title.rendered} ||  Mia and Bobs Travel Blog`;
