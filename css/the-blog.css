@@ -69,7 +69,7 @@ header {
   color: var(--main-green-colour);
 }
 
-.blog-btn {
+.the-blog-load-more {
   display: flex;
   justify-content: center;
 }
