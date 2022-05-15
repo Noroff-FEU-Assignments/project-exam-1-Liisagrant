@@ -9,36 +9,26 @@ const imageText = document.querySelector("caption");
 
 const apiUrl = `https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts/${id}?_embed=true`;
 const postBox = document.querySelector(".the-post-box");
+const postImgBox = document.querySelector(".the-post-box-images-grid");
 
 const getPost = async () => {
   try {
     const response = await fetch(apiUrl);
     const post = await response.json();
     console.log(post);
-    postBox.innerHTML += `
-            <div class="the-post-box-images-grid">
+    let data = post._embedded["wp:featuredmedia"];
+    for (img of data) {
+      postImgBox.innerHTML += `
                     <img 
-                    class="image-grid-col-two image-grid-row-two" src="/image/bali.jpg"
-                    alt="Image of a cabin on a island in bali. By the sea"
-                    data-orginal = "bali.jpg"
-                    />
 
-                    <img src="/image/diving.jpg"
-                    alt="turtle svimming in the ocean"
-                    data-orginal = "diving.jpg"
-
+                    class="image-grid-col-two image-grid-row-two" 
+                    src="${img.source_url}"
+                    alt=""
+                    data-orginal = "${img.source_url}"
                     />
+      `;
 
-                    <img src="/image/food-market.jpg"
-                    alt="Foodmarket in Bali"
-                    data-orginal = "food-market.jpg"
-                    />
-
-                    <img class=" image-grid-col-two" src="/image/savanna.jpg"
-                    alt="The savanna"
-                    data-orginal = "savanna.jpg"
-                    />
-            </div>
+      postBox.innerHTML += `
                 <div class="page-title">
                     <h1>${post.title.rendered}</h1>
                 </div>
@@ -50,6 +40,8 @@ const getPost = async () => {
                 </div>
             </div> 
             `;
+      document.title = `${post.title.rendered} ||  Mia and Bobs Travel Blog`;
+    }
   } catch {
     console.log("error");
   }
@@ -63,7 +55,7 @@ image.forEach((image) => {
     orgianl.classList.add("open");
 
     const orginalSrc = image.getAttribute("data-orginal");
-    orgianl.src = `./image/${orginalSrc}`;
+    orgianl.src = `${orginalSrc}`;
   });
 });
 
