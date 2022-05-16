@@ -5,6 +5,15 @@
   --main-yellow-color: #ffd670;
   --main-pink-color: #c2949e;
   --main-dark-colour: #868181;
+  --gradient: linear-gradient(
+    90deg,
+    #f0a1dc,
+    #eba3e5,
+    #eeabf7,
+    #e4c6db,
+    #ddf08a,
+    #eccd93
+  );
 }
 
 .herobanner-background-image-homepage {
@@ -43,6 +52,49 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: #00000066;
+}
+
+.modal-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444444;
+  background: #ddd;
+  background-size: 300%;
+  background-image: var(--gradient);
+  animation: modal-animation 4s infinite;
+  margin: auto;
+  padding: 8px;
+  border: 2px solid var(--main-dark-colour);
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+@keyframes modal-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
 
 .image-carousel-box h2 {
@@ -164,7 +216,8 @@
   padding: 2px;
 }
 
-.error-input-name {
+.error-input-name,
+.error-input-email {
   color: #ff0000;
   font-size: 8px;
   display: none;
