@@ -56,7 +56,7 @@ modalBtn.onclick = (event) => {
 
   if (
     checkLength(nameInput.value, 2) === true &&
-    (ValidEmail(email.value) === true) === true
+    ValidEmail(email.value) === true
   ) {
     modal.style.display = "block";
   }
