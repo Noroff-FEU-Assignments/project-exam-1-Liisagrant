@@ -2,10 +2,6 @@
   --main-letter-colour: #444444;
   --main-green-colour: #68a691;
   --main-green-light-colour: #d0e9e2;
-  --main-yellow-color: #ffd670;
-  --main-pink-color: #c2949e;
-  --main-dark-colour: #868181;
-  /*--gradient:*/
 }
 
 header {
@@ -31,7 +27,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-bottom: 2px solid #68a691;
+  border-bottom: 2px solid var(--main-green-colour);
   margin: 16px 8px;
 }
 
@@ -51,22 +47,19 @@ header {
   padding: 8px 0;
 }
 
-.author p {
-  text-align: right;
-  padding: 8px;
-}
-
 .read-more-link {
   display: flex;
   justify-content: flex-end;
 }
 
 .read-more-link a {
+  font-size: 18px;
   text-decoration: underline;
 }
 
 .read-more-link a:hover {
-  color: var(--main-green-colour);
+  border: 2px solid var(--main-green-colour);
+  padding: 4px;
 }
 
 .the-blog-load-more {

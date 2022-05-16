@@ -2,29 +2,22 @@ const query = document.location.search;
 const param = new URLSearchParams(query);
 const id = param.get("id");
 
-const modal = document.querySelector(".modal");
-const image = document.querySelectorAll(".the-post-box-images-grid img");
-const orgianl = document.querySelector(".full-img");
-const imageText = document.querySelector("caption");
-
 const apiUrl = `https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts/${id}?_embed=true`;
 const postBox = document.querySelector(".the-post-box");
-const postImgBox = document.querySelector(".the-post-box-images-grid");
+const postImgBox = document.querySelector(".the-post-box-image");
 
 const getPost = async () => {
   try {
     const response = await fetch(apiUrl);
     const post = await response.json();
-    console.log(post);
     let data = post._embedded["wp:featuredmedia"];
     for (img of data) {
       postImgBox.innerHTML += `
                     <img 
-
-                    class="image-grid-col-two image-grid-row-two" 
+                    class= "img"
+                    onClick ="getModal()"
                     src="${img.source_url}"
-                    alt=""
-                    data-orginal = "${img.source_url}"
+                    alt="${img.alt_text}"
                     />
       `;
 
@@ -38,27 +31,29 @@ const getPost = async () => {
             </div> 
             `;
       document.title = `${post.title.rendered} ||  Mia and Bobs Travel Blog`;
+
+      modal.innerHTML += `
+        <img
+          src="${img.source_url}"
+          alt="${img.alt_text}"
+          class="full-img"
+        />
+        <p class="caption">${img.slug}</p>
+      `;
     }
   } catch {
-    console.log("error");
+    postBox.innerHTML = `Sorry, we have a problem!`;
   }
 };
 
 getPost();
 
-image.forEach((image) => {
-  image.addEventListener("click", () => {
-    modal.classList.add("open");
-    orgianl.classList.add("open");
+const modal = document.querySelector(".modal");
 
-    const orginalSrc = image.getAttribute("data-orginal");
-    orgianl.src = `${orginalSrc}`;
-  });
-});
+const getModal = () => {
+  modal.style.display = "flex";
+};
 
-modal.addEventListener("click", (e) => {
-  if (e.target.classList.contains("modal")) {
-    modal.classList.remove("open");
-    orgianl.classList.remove("open");
-  }
+modal.addEventListener("click", () => {
+  modal.style.display = "none";
 });
