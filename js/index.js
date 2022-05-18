@@ -3,6 +3,7 @@ const url =
 const blogPostContainer = document.querySelector(".blog-post-card");
 const backBtn = document.querySelector("#btn-back");
 const nextBtn = document.querySelector("#btn-back");
+const loader = document.querySelector(".loader");
 
 const getBlogPost = async () => {
   try {
@@ -28,6 +29,8 @@ const getBlogPost = async () => {
     }
   } catch (error) {
     blogPostContainer.innerHTML = `Sorry we have an error`;
+  } finally {
+    loader.style.display = "none";
   }
 };
 

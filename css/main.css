@@ -114,3 +114,8 @@ input {
   padding: 4px;
   content: "/";
 }
+
+.loader {
+  display: flex;
+  justify-content: center;
+}

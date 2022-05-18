@@ -4,6 +4,7 @@ const urlLoadMore =
   "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true&per_page=10&offset=10";
 const blogPostsContainer = document.querySelector(".all-blog-posts");
 const loadMore = document.querySelector("#blog-btn");
+const loader = document.querySelector(".loader");
 
 const getAllBlogs = async () => {
   try {
@@ -37,6 +38,7 @@ const getAllBlogs = async () => {
   } catch {
     blogPostsContainer.innerHTML = `Sorry, we have an error`;
   } finally {
+    loader.style.display = "none";
   }
 };
 

@@ -6,6 +6,7 @@ const apiUrl = `https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2
 const postBox = document.querySelector(".the-post-box");
 const postImgBox = document.querySelector(".the-post-box-image");
 const bredcrumbsTitle = document.querySelector(".breadcrumbs-title");
+const loader = document.querySelector(".loader");
 
 const getPost = async () => {
   try {
@@ -47,6 +48,8 @@ const getPost = async () => {
     }
   } catch {
     postBox.innerHTML = `Sorry, we have a problem!`;
+  } finally {
+    loader.style.display = "none";
   }
 };
 
