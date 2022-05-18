@@ -5,6 +5,7 @@ const id = param.get("id");
 const apiUrl = `https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts/${id}?_embed=true`;
 const postBox = document.querySelector(".the-post-box");
 const postImgBox = document.querySelector(".the-post-box-image");
+const bredcrumbsTitle = document.querySelector(".breadcrumbs-title");
 
 const getPost = async () => {
   try {
@@ -12,6 +13,9 @@ const getPost = async () => {
     const post = await response.json();
     let data = post._embedded["wp:featuredmedia"];
     for (img of data) {
+      bredcrumbsTitle.innerHTML += `
+                    <a href="#">${post.title.rendered}</a>
+      `;
       postImgBox.innerHTML += `
                     <img 
                     class= "img"

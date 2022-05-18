@@ -95,3 +95,22 @@ input {
   padding: 4px;
   border-radius: 15px;
 }
+
+.breadcrumbs {
+  list-style: none;
+  color: var(--main-letter-colour);
+  margin: 8px;
+}
+
+.breadcrumbs li {
+  display: inline;
+}
+
+.breadcrumbs a:hover {
+  color: var(--main-green-colour);
+}
+
+.breadcrumbs li + li::before {
+  padding: 4px;
+  content: "/";
+}
