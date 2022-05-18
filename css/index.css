@@ -69,21 +69,31 @@
 }
 
 .modal-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #444444;
   background: #ddd;
   background-size: 300%;
   background-image: var(--gradient);
   animation: modal-animation 4s infinite;
   margin: auto;
-  padding: 8px;
-  border: 2px solid var(--main-dark-colour);
+  border: 2px solid var(--main-pink-color);
   width: 200px;
   height: 200px;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
+}
+
+.text-box-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid var(--main-pink-color);
+  border-bottom: none;
+  height: 100px;
+  padding-bottom: 32px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 32px), 0% 100%);
 }
 
 @keyframes modal-animation {
@@ -98,7 +108,57 @@
   }
 }
 
-.image-carousel-box h2 {
+.carusel-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.carusel-box h2 {
+  margin: 16px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.img-carousel {
+  object-fit: cover;
+  height: 200px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.text-slide-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  right: 40px;
+  bottom: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.carusel-box button {
+  margin: 16px;
+  width: 100px;
+  display: inline;
+}
+
+/* .image-carousel-box h2 {
   text-align: center;
   padding: 16px;
 }
@@ -110,7 +170,7 @@
   align-items: center;
 }
 
-.blog-post-image-box {
+.blog-post-image-box img {
   position: relative;
 }
 
@@ -189,7 +249,7 @@
 
 .current-slide {
   background: var(--main-green-colour);
-}
+} */
 
 .subscribe-newsletter-content {
   flex-direction: column;

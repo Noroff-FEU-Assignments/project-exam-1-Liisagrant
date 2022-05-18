@@ -1,41 +1,45 @@
 const url =
   "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true";
-const blogPostContainer = document.querySelector(".blog-post-card");
+const blogPostSlide = document.querySelector(".carousel-slide");
+const carouselContainer = document.querySelector(".carousel-container");
+const nextBtn = document.querySelector("#btn-next");
 const backBtn = document.querySelector("#btn-back");
-const nextBtn = document.querySelector("#btn-back");
-const loader = document.querySelector(".loader");
 
 const getBlogPost = async () => {
   try {
     const response = await fetch(url);
     const blogPosts = await response.json();
-    console.log(blogPosts);
     for (blog of blogPosts) {
       let data = blog._embedded["wp:featuredmedia"];
       for (img of data) {
         let newPost = `
             <a href="the-post.html?id=${blog.id}">
-                <div class="blog-post-image-box">
-                         <img src="${img.source_url}" alt=""/>
-                        <div class="text-box-carousel">
+                         <img class= "img-carousel" src="${img.source_url}" alt="${img.alt_text}"/>
+                        <div class="text-slide-carousel">
                             <h3>${blog.title.rendered}</h3>
-                            <p>${blog.excerpt.rendered}</p>
                         </div>
                 </div>
             </a>
             `;
-        blogPostContainer.innerHTML = newPost;
+        blogPostSlide.innerHTML += newPost;
       }
     }
   } catch (error) {
-    blogPostContainer.innerHTML = `Sorry we have an error`;
+    blogPostSlide.innerHTML = `Sorry we have an error`;
   } finally {
-    loader.style.display = "none";
+    // loader.style.display = "none";
   }
 };
 
 getBlogPost();
 
+//Carousel
+let counter = 0;
+const size = carouselContainer.clientWidth;
+
+blogPostSlide.style.tranform = "translateX(" + -size * counter + "px)";
+
+//Modal subscribe
 const modal = document.getElementById("modalSubscribe");
 const nameError = document.querySelector(".error-input-name");
 const emailError = document.querySelector(".error-input-email");

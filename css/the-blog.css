@@ -60,6 +60,7 @@ header {
 .read-more-link a:hover {
   border: 2px solid var(--main-green-colour);
   padding: 4px;
+  border-radius: 15px;
 }
 
 .the-blog-load-more {
