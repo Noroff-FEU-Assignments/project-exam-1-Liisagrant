@@ -108,11 +108,15 @@
   }
 }
 
-.carusel-box {
-  display: flex;
-  flex-direction: column;
+/* .carusel-box {
   text-align: center;
-  justify-content: space-evenly;
+  margin: auto;
+} */
+
+.carusel-box {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
 }
 
 .carusel-box h2 {
@@ -121,23 +125,27 @@
 
 .carousel-container {
   display: flex;
+}
+
+/* .carousel-container {
+  display: flex;
   flex-wrap: wrap;
   width: 100%;
   margin: auto;
   overflow: hidden;
-}
+} */
 
 .carousel-slide {
   display: flex;
   width: 100%;
-  position: relative;
 }
 
 .img-carousel {
   object-fit: cover;
   height: 200px;
-  width: 300px;
+  width: 250px;
   border-radius: 15px;
+  margin: 10px;
 }
 
 .text-slide-carousel {
@@ -157,99 +165,6 @@
   width: 100px;
   display: inline;
 }
-
-/* .image-carousel-box h2 {
-  text-align: center;
-  padding: 16px;
-}
-
-.carousel-box {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.blog-post-image-box img {
-  position: relative;
-}
-
-.text-box-carousel {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.blog-post-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: aliceblue;
-  border-radius: 15px;
-  margin: 8px;
-}
-
-.slide {
-  width: 100%;
-  max-width: 800px;
-  height: 200px;
-  position: absolute;
-  transition: all 0.5s;
-}
-
-.blog-post-card:hover {
-  transform: scale(1.04);
-  transition: 1s;
-}
-
-.blog-post-card img {
-  border-radius: 15px;
-  height: 400px;
-  width: 100%;
-}
-
-.blog-post-card h3 {
-  text-align: center;
-}
-
-.blog-post-card h3,
-.blog-post-card p {
-  padding: 8px;
-}
-
-.blog-post-card p {
-  font-size: 12px;
-}
-
-.sircel-for-carousel-box button {
-  border-radius: 15px;
-}
-
-.sircel-for-carousel-box {
-  display: flex;
-  justify-content: center;
-}
-
-.carousel-nav {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-
-.carousel-indicator {
-  border: 0;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background: #b9c2bf;
-  margin: 0 12px;
-}
-
-.current-slide {
-  background: var(--main-green-colour);
-} */
 
 .subscribe-newsletter-content {
   flex-direction: column;
@@ -288,4 +203,7 @@
   .herobanner-text h1 {
     font-size: 50px;
   }
+}
+
+@media screen and (min-width: 987px) {
 }
