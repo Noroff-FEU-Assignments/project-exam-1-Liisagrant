@@ -54,12 +54,12 @@ header {
 .about-us-what-we-care-about img {
   height: 200px;
   margin: 8px auto;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 426px) {
   .about-us-what-we-care-about img {
     height: 300px;
-    margin: 8px auto;
   }
 }
 

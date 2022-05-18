@@ -10,7 +10,8 @@ header {
   background-color: var(--main-green-colour);
 }
 
-.section-contact {
+.section-contact,
+.icon-box-success {
   display: flex;
   justify-content: center;
 }
@@ -28,6 +29,11 @@ header {
 .success {
   text-align: center;
   display: none;
+}
+
+.success h3,
+.success h4 {
+  margin: 16px 8px;
 }
 
 .container-form {
