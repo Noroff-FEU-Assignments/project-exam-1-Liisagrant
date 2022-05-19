@@ -4,6 +4,8 @@ const blogPostSlide = document.querySelector(".carousel-slide");
 const carouselContainer = document.querySelector(".carousel-container");
 const nextBtn = document.querySelector("#btn-next");
 const backBtn = document.querySelector("#btn-back");
+const loader = document.querySelector(".loader");
+const subscribeBox = document.querySelector(".subscribe-newsletter-homepage");
 
 const getBlogPost = async () => {
   try {
@@ -27,7 +29,7 @@ const getBlogPost = async () => {
   } catch (error) {
     blogPostSlide.innerHTML = `Sorry we have an error`;
   } finally {
-    // loader.style.display = "none";
+    loader.style.display = "none";
   }
 };
 
@@ -111,6 +113,7 @@ modalBtn.onclick = (event) => {
 
 modal.onclick = () => {
   modal.style.display = "none";
+  subscribeBox.style.display = "none";
 };
 
 const checkLength = (value, len) => {
