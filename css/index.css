@@ -124,6 +124,7 @@
 
 .carousel-container {
   display: flex;
+  flex-wrap: wrap;
   width: 320px;
   overflow: hidden;
 }
@@ -149,7 +150,7 @@
 #btn-next {
   position: absolute;
   top: 50%;
-  opacity: 75%;
+  opacity: 80%;
   transform: translateY(-50%);
 }
 
@@ -159,11 +160,11 @@
 }
 
 #btn-next {
-  right: 0%;
+  right: -5%;
 }
 
 #btn-back {
-  left: 0%;
+  left: -5%;
 }
 
 #btn-back:hover,
@@ -224,6 +225,7 @@
     width: 987px;
   }
   .img-carousel {
-    margin: 20px;
+    margin: 10px;
+    width: 309px;
   }
 }

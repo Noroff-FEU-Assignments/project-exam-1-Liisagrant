@@ -43,12 +43,15 @@ nextBtn.addEventListener("click", () => {
   if (carouselContainer.clientWidth === 320 && counter >= 7) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
+    location.reload();
   } else if (carouselContainer.clientWidth === 650 && counter >= 3) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
+    location.reload();
   } else if (carouselContainer.clientWidth === 987 && counter >= 2) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
+    location.reload();
   }
   blogPostSlide.style.transform = "transform 0.4 ease-in-out";
   counter++;
@@ -59,12 +62,15 @@ backBtn.addEventListener("click", () => {
   if (carouselContainer.clientWidth === 320 && counter <= 0) {
     counter = 8;
     blogPostSlide.style.transform = "translateX(0px)";
+    location.reload();
   } else if (carouselContainer.clientWidth === 650 && counter <= 0) {
     counter = 3;
     blogPostSlide.style.transform = "translateX(0px)";
+    location.reload();
   } else if (carouselContainer.clientWidth === 987 && counter <= 0) {
     counter = 3;
     blogPostSlide.style.transform = "translateX(0px)";
+    location.reload();
   }
   blogPostSlide.style.transform = "transform 0.4 ease-in-out";
   counter--;
