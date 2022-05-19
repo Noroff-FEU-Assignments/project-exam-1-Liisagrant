@@ -1,5 +1,5 @@
 const url =
-  "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true&per_page=8";
+  "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true&per_page=12";
 const blogPostSlide = document.querySelector(".carousel-slide");
 const carouselContainer = document.querySelector(".carousel-container");
 const nextBtn = document.querySelector("#btn-next");
@@ -46,6 +46,9 @@ nextBtn.addEventListener("click", () => {
   } else if (carouselContainer.clientWidth === 650 && counter >= 3) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
+  } else if (carouselContainer.clientWidth === 987 && counter >= 2) {
+    counter = -1;
+    blogPostSlide.style.transform = "translateX(0px)";
   }
   blogPostSlide.style.transform = "transform 0.4 ease-in-out";
   counter++;
@@ -57,6 +60,9 @@ backBtn.addEventListener("click", () => {
     counter = 8;
     blogPostSlide.style.transform = "translateX(0px)";
   } else if (carouselContainer.clientWidth === 650 && counter <= 0) {
+    counter = 3;
+    blogPostSlide.style.transform = "translateX(0px)";
+  } else if (carouselContainer.clientWidth === 987 && counter <= 0) {
     counter = 3;
     blogPostSlide.style.transform = "translateX(0px)";
   }

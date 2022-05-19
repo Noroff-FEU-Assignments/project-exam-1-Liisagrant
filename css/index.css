@@ -149,20 +149,26 @@
 #btn-next {
   position: absolute;
   top: 50%;
+  opacity: 75%;
   transform: translateY(-50%);
 }
 
 #btn-back img,
 #btn-next img {
-  height: 50px;
+  height: 30px;
 }
 
 #btn-next {
-  right: 2%;
+  right: 0%;
 }
 
 #btn-back {
-  left: 2%;
+  left: 0%;
+}
+
+#btn-back:hover,
+#btn-next:hover {
+  background-color: var(--main-green-light-colour);
 }
 
 .subscribe-newsletter-content {
@@ -214,4 +220,10 @@
 }
 
 @media screen and (min-width: 987px) {
+  .carousel-container {
+    width: 987px;
+  }
+  .img-carousel {
+    margin: 20px;
+  }
 }
