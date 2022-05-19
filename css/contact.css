@@ -81,7 +81,7 @@ form button {
   width: 200px;
 }
 
-.error-form {
+.error-form p {
   display: none;
   color: var(--main--error-colour);
   font-size: 12px;

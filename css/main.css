@@ -43,11 +43,13 @@ a {
 a {
   text-decoration: none;
   color: #000000;
+  transition: 1s;
 }
 
 a:hover {
   color: #fff;
-  text-decoration: underline;
+  font-size: 22px;
+  transition: 1s;
 }
 
 button {
@@ -118,4 +120,5 @@ input {
 .loader {
   display: flex;
   justify-content: center;
+  height: 100px;
 }

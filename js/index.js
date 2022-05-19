@@ -42,13 +42,13 @@ const size = carouselContainer.clientWidth;
 blogPostSlide.style.tranform = "translateX(" + -size * counter + "px)";
 
 const getCarouselNext = () => {
-  if (carouselContainer.clientWidth === 320 && counter >= 7) {
+  if (carouselContainer.clientWidth === 320 && counter >= 11) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
-  } else if (carouselContainer.clientWidth === 650 && counter >= 3) {
+  } else if (carouselContainer.clientWidth === 650 && counter >= 5) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
-  } else if (carouselContainer.clientWidth === 987 && counter >= 2) {
+  } else if (carouselContainer.clientWidth === 987 && counter >= 3) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
   }
@@ -63,13 +63,13 @@ nextBtn.addEventListener("click", () => {
 
 const getCarouselBack = () => {
   if (carouselContainer.clientWidth === 320 && counter <= 0) {
-    counter = 8;
+    counter = 10;
     blogPostSlide.style.transform = "translateX(0px)";
   } else if (carouselContainer.clientWidth === 650 && counter <= 0) {
-    counter = 3;
+    counter = 4;
     blogPostSlide.style.transform = "translateX(0px)";
   } else if (carouselContainer.clientWidth === 987 && counter <= 0) {
-    counter = 3;
+    counter = 2;
     blogPostSlide.style.transform = "translateX(0px)";
   }
   blogPostSlide.style.transform = "transform 0.4 ease-in-out";
@@ -83,8 +83,8 @@ backBtn.addEventListener("click", () => {
 
 //Modal subscribe
 const modal = document.getElementById("modalSubscribe");
-const nameError = document.querySelector(".error-input-name");
-const emailError = document.querySelector(".error-input-email");
+const nameError = document.querySelector(".error-input-name p");
+const emailError = document.querySelector(".error-input-email p");
 const email = document.getElementById("e-mail");
 const nameInput = document.getElementById("name");
 const modalBtn = document.getElementById("modalBTN");

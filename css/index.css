@@ -3,6 +3,7 @@
   --main-green-colour: #68a691;
   --main-green-light-colour: #d0e9e2;
   --main-dark-colour: #868181;
+  --main--error-colour: #962e2e;
   --gradient: linear-gradient(
     90deg,
     #f0a1dc,
@@ -196,10 +197,10 @@
   padding: 2px;
 }
 
-.error-input-name,
-.error-input-email {
-  color: #ff0000;
-  font-size: 8px;
+.error-input-name p,
+.error-input-email p {
+  color: var(--main--error-colour);
+  font-size: 12px;
   display: none;
 }
 
@@ -216,6 +217,13 @@
   .img-carousel {
     margin: 18px;
   }
+  #btn-next {
+    right: -1%;
+  }
+
+  #btn-back {
+    left: -1%;
+  }
 }
 
 @media screen and (min-width: 987px) {
@@ -226,7 +234,9 @@
     margin: 10px;
     width: 309px;
   }
+}
 
+@media screen and (min-width: 1130px) {
   #btn-next {
     right: -5%;
   }
