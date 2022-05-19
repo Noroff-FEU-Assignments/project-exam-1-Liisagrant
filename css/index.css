@@ -160,11 +160,11 @@
 }
 
 #btn-next {
-  right: -5%;
+  right: -2%;
 }
 
 #btn-back {
-  left: -5%;
+  left: -2%;
 }
 
 #btn-back:hover,
@@ -227,5 +227,13 @@
   .img-carousel {
     margin: 10px;
     width: 309px;
+  }
+
+  #btn-next {
+    right: -5%;
+  }
+
+  #btn-back {
+    left: -5%;
   }
 }

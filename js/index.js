@@ -39,42 +39,44 @@ const size = carouselContainer.clientWidth;
 
 blogPostSlide.style.tranform = "translateX(" + -size * counter + "px)";
 
-nextBtn.addEventListener("click", () => {
+const getCarouselNext = () => {
   if (carouselContainer.clientWidth === 320 && counter >= 7) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
-    location.reload();
   } else if (carouselContainer.clientWidth === 650 && counter >= 3) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
-    location.reload();
   } else if (carouselContainer.clientWidth === 987 && counter >= 2) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
-    location.reload();
   }
   blogPostSlide.style.transform = "transform 0.4 ease-in-out";
   counter++;
   blogPostSlide.style.transform = "translateX(" + -size * counter + "px";
+};
+
+nextBtn.addEventListener("click", () => {
+  getCarouselNext();
 });
 
-backBtn.addEventListener("click", () => {
+const getCarouselBack = () => {
   if (carouselContainer.clientWidth === 320 && counter <= 0) {
     counter = 8;
     blogPostSlide.style.transform = "translateX(0px)";
-    location.reload();
   } else if (carouselContainer.clientWidth === 650 && counter <= 0) {
     counter = 3;
     blogPostSlide.style.transform = "translateX(0px)";
-    location.reload();
   } else if (carouselContainer.clientWidth === 987 && counter <= 0) {
     counter = 3;
     blogPostSlide.style.transform = "translateX(0px)";
-    location.reload();
   }
   blogPostSlide.style.transform = "transform 0.4 ease-in-out";
   counter--;
   blogPostSlide.style.transform = "translateX(" + -size * counter + "px";
+};
+
+backBtn.addEventListener("click", () => {
+  getCarouselBack();
 });
 
 //Modal subscribe
