@@ -1,5 +1,5 @@
 const url =
-  "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true&per_page=9";
+  "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true&per_page=8";
 const blogPostSlide = document.querySelector(".carousel-slide");
 const carouselContainer = document.querySelector(".carousel-container");
 const nextBtn = document.querySelector("#btn-next");
@@ -40,7 +40,10 @@ const size = carouselContainer.clientWidth;
 blogPostSlide.style.tranform = "translateX(" + -size * counter + "px)";
 
 nextBtn.addEventListener("click", () => {
-  if (carouselContainer.clientWidth === 320 && counter >= 8) {
+  if (carouselContainer.clientWidth === 320 && counter >= 7) {
+    counter = -1;
+    blogPostSlide.style.transform = "translateX(0px)";
+  } else if (carouselContainer.clientWidth === 650 && counter >= 3) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
   }
@@ -51,7 +54,10 @@ nextBtn.addEventListener("click", () => {
 
 backBtn.addEventListener("click", () => {
   if (carouselContainer.clientWidth === 320 && counter <= 0) {
-    counter = 7;
+    counter = 8;
+    blogPostSlide.style.transform = "translateX(0px)";
+  } else if (carouselContainer.clientWidth === 650 && counter <= 0) {
+    counter = 3;
     blogPostSlide.style.transform = "translateX(0px)";
   }
   blogPostSlide.style.transform = "transform 0.4 ease-in-out";

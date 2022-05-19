@@ -37,7 +37,7 @@
 }
 
 .welcom-text-homepage,
-.travel-hackes-homepage-text {
+.travel-hacks-homepage-text {
   margin: 100px 16px;
 }
 
@@ -108,15 +108,14 @@
   }
 }
 
-/* .carusel-box {
-  text-align: center;
-  margin: auto;
-} */
-
 .carusel-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  overflow: hidden;
   text-align: center;
+  position: relative;
 }
 
 .carusel-box h2 {
@@ -125,45 +124,45 @@
 
 .carousel-container {
   display: flex;
-}
-
-/* .carousel-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: auto;
+  width: 320px;
   overflow: hidden;
-} */
+}
 
 .carousel-slide {
   display: flex;
-  width: 100%;
 }
 
 .img-carousel {
   object-fit: cover;
-  height: 200px;
-  width: 250px;
+  height: 400px;
+  width: 290px;
   border-radius: 15px;
-  margin: 10px;
+  margin: 15px;
 }
 
 .text-slide-carousel {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 40px;
-  right: 40px;
-  bottom: 50px;
-  width: 100%;
-  background-color: rgba(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.carusel-box button {
-  margin: 16px;
-  width: 100px;
-  display: inline;
+#btn-back,
+#btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#btn-back img,
+#btn-next img {
+  height: 50px;
+}
+
+#btn-next {
+  right: 2%;
+}
+
+#btn-back {
+  left: 2%;
 }
 
 .subscribe-newsletter-content {
@@ -199,9 +198,18 @@
   display: none;
 }
 
+@media screen and (min-width: 700px) {
+  .carousel-container {
+    width: 650px;
+  }
+}
+
 @media screen and (min-width: 650px) {
   .herobanner-text h1 {
     font-size: 50px;
+  }
+  .img-carousel {
+    margin: 18px;
   }
 }
 
