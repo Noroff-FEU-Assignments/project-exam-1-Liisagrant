@@ -165,6 +165,7 @@ i {
 
 footer p {
   color: #000000;
+  margin: 4px;
 }
 
 .fab {
@@ -241,7 +242,6 @@ footer p {
   footer p {
     font-size: 12px;
     padding: 2px;
-    margin: 4px;
   }
 
   .content-footer {

@@ -35,6 +35,15 @@ a {
   /*--gradient:*/
 }
 
+header {
+  background-color: var(--main-green-colour);
+}
+
+.page-title {
+  margin-top: 50px;
+  padding: 16px 0;
+}
+
 .container {
   max-width: 987px;
   margin: 0 auto;

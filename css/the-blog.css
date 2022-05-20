@@ -4,16 +4,6 @@
   --main-green-light-colour: #d0e9e2;
 }
 
-header {
-  background-color: #68a691;
-}
-
-.page-title h1 {
-  color: var(--main-letter-colour);
-  font-size: 32px;
-  padding: 32px 16px;
-}
-
 .all-blog-posts {
   display: flex;
   flex-direction: column;

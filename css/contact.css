@@ -6,10 +6,6 @@
   --main--error-colour: #962e2e;
 }
 
-header {
-  background-color: var(--main-green-colour);
-}
-
 .section-contact,
 .icon-box-success {
   display: flex;

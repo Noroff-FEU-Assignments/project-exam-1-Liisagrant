@@ -75,24 +75,34 @@
   animation: modal-animation 4s infinite;
   margin: auto;
   border: 2px solid var(--main-pink-color);
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
+  max-width: 500px;
+  border-radius: 4px;
   text-align: center;
+  padding: 8px;
+  margin: 16px auto;
 }
 
-.text-box-modal {
+.img-modal {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("/image/modal-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #fff;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border: 2px solid var(--main-pink-color);
   border-bottom: none;
-  height: 100px;
-  padding-bottom: 32px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 32px), 0% 100%);
+  height: 400px;
+  opacity: 80%;
+}
+
+.img-modal p {
+  font-size: 50px;
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+  background-color: #00000068;
 }
 
 @keyframes modal-animation {
