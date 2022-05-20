@@ -158,6 +158,7 @@
 #btn-back,
 #btn-next {
   position: absolute;
+  border: 2px solid var(--main-green-colour);
   top: 50%;
   opacity: 80%;
   transform: translateY(-50%);
