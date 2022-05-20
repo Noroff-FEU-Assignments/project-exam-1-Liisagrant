@@ -43,13 +43,10 @@ a {
 a {
   text-decoration: none;
   color: #000000;
-  transition: 1s;
 }
 
 a:hover {
   color: #fff;
-  font-size: 22px;
-  transition: 1s;
 }
 
 button {
@@ -120,5 +117,8 @@ input {
 .loader {
   display: flex;
   justify-content: center;
+}
+
+.loader img {
   height: 100px;
 }
