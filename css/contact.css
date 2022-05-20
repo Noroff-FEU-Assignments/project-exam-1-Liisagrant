@@ -25,11 +25,36 @@
 .success {
   text-align: center;
   display: none;
+  margin: 200px 50px;
+}
+
+.success h3 {
+  color: var(--main-green-colour);
 }
 
 .success h3,
 .success h4 {
   margin: 16px 8px;
+}
+
+.success a {
+  text-decoration: underline;
+}
+
+.fab {
+  color: #fff;
+}
+
+.success .fa-facebook {
+  color: #4267b2;
+}
+
+.success .fa-instagram {
+  color: #833ab4;
+}
+
+.success .fa-snapchat {
+  color: #fffc00;
 }
 
 .container-form {
