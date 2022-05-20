@@ -21,9 +21,6 @@ const getAllBlogs = async () => {
                         <div class="blog-post-title">
                             <h2>${blog.title.rendered}</h2>
                         </div>
-                        <div class="date-post">
-                            <p>${blog.date}</p>
-                        </div>
                         <div class="short-description">
                             <p>${img.caption.rendered}</p>
                         </div>

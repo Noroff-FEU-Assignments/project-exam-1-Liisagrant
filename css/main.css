@@ -42,6 +42,7 @@ header {
 .page-title {
   margin-top: 50px;
   padding: 16px 0;
+  margin: 8px;
 }
 
 .container {

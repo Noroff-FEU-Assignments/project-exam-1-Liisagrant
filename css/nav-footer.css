@@ -17,57 +17,6 @@ nav {
   margin: 0 2px;
 }
 
-/* nav form {
-  display: flex;
-  justify-content: center;
-} */
-
-/* .box-search-desktop input {
-  display: none;
-}
-
-.box-search-desktop,
-.box-search {
-  width: 200px;
-  height: 40px;
-  background-color: transparent;
-  border: none;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-.box-search-desktop i,
-.box-search i {
-  font-size: 16px;
-  color: #000000;
-}
-
-.box-search-desktop input,
-.box-search input {
-  display: block;
-  flex: 1;
-  height: 32px;
-  background: transparent;
-  border: transparent;
-  padding: 10px;
-  border: 2px solid #000000;
-}
-
-.box-search-desktop input::placeholder,
-.box-search input::placeholder {
-  color: #000000;
-  font-family: "Mukta Vaani", sans-serif;
-  font-size: 10px;
-}
-
-.box-search-desktop:focus,
-.box-search input:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #000000;
-} */
-
 nav .links {
   display: flex;
 }
@@ -187,18 +136,10 @@ footer p {
     justify-content: space-between;
   }
 
-  .box-search-desktop {
-    display: none;
-  }
-
   .logo svg {
     height: 80px;
     width: 90px;
     padding: 10px 0 0 10px;
-  }
-
-  .box-search input {
-    display: block;
   }
 
   #mobile-menu-btn {
