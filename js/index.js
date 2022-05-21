@@ -35,6 +35,20 @@ const getBlogPost = async () => {
 
 getBlogPost();
 
+//hero-banner slider
+const slideImages = document.querySelectorAll(".slideshow");
+const nextImageDelay = 4000;
+let currentImgCounter = 0;
+
+const nextImage = () => {
+  slideImages[currentImgCounter].style.opacity = 0;
+  currentImgCounter = (currentImgCounter + 1) % slideImages.length;
+  slideImages[currentImgCounter].style.opacity = 1;
+};
+
+slideImages[currentImgCounter].style.opacity = 1;
+setInterval(nextImage, nextImageDelay);
+
 //Carousel
 let counter = 0;
 const size = carouselContainer.clientWidth;

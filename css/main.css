@@ -35,7 +35,7 @@ a {
   /*--gradient:*/
 }
 
-header {
+.green {
   background-color: var(--main-green-colour);
 }
 

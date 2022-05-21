@@ -16,10 +16,48 @@
 }
 
 .herobanner-background-image-homepage {
-  background-image: url("/image/herobanner-homepage.jpg");
+  /* background-image: url("/image/herobanner-homepage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
+  background-position: 20% 80%; */
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  z-index: -1;
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 12 ease-in-out;
+}
+
+.img1,
+.img2,
+.img3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url(/image/city.jpg);
+  background-position: 60% 40%;
+}
+
+.img2 {
+  background-image: url(/image/hike.jpg);
+  background-position: 10% 90%;
+}
+
+.img3 {
+  background-image: url(/image/beach.jpg);
   background-position: 20% 80%;
 }
 
