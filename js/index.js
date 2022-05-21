@@ -14,9 +14,10 @@ const getBlogPost = async () => {
     for (blog of blogPosts) {
       let data = blog._embedded["wp:featuredmedia"];
       for (img of data) {
+        console.log(img);
         let newPost = `
             <a href="the-post.html?id=${blog.id}">
-                         <img class= "img-carousel" src="${img.source_url}" alt="${img.alt_text}"/>
+                         <img class= "img-carousel" src="${img.media_details.sizes.medium_large.source_url}" alt="${img.alt_text}"/>
                         <div class="text-slide-carousel">
                             <h3>${blog.title.rendered}</h3>
                         </div>
