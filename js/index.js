@@ -19,7 +19,7 @@ const getBlogPost = async () => {
             <a href="the-post.html?id=${blog.id}">
                          <img class= "img-carousel" src="${img.media_details.sizes.medium_large.source_url}" alt="${img.alt_text}"/>
                         <div class="text-slide-carousel">
-                            <h3>${blog.title.rendered}</h3>
+                            <h3>${img.title.rendered}</h3>
                         </div>
                 </div>
             </a>
@@ -91,10 +91,6 @@ const getCarouselBack = () => {
   counter--;
   blogPostSlide.style.transform = "translateX(" + -size * counter + "px";
 };
-
-backBtn.addEventListener("click", () => {
-  getCarouselBack();
-});
 
 //Modal subscribe
 const modal = document.getElementById("modalSubscribe");

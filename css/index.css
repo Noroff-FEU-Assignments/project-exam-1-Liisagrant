@@ -47,25 +47,26 @@
 }
 
 .img1 {
-  background-image: url(/image/city.jpg);
+  background-image: url("/image/lake-herobanner.jpg");
   background-position: 60% 40%;
 }
 
 .img2 {
-  background-image: url(/image/hike.jpg);
+  background-image: url("/image/hike-herobanner.jpg");
   background-position: 10% 90%;
 }
 
 .img3 {
-  background-image: url(/image/beach.jpg);
+  background-image: url("/image/beach-herobanner.jpg");
   background-position: 20% 80%;
 }
 
 .herobanner-text h1 {
   font-family: "Oleo Script Swash Caps", cursive;
-  font-size: 32px;
+  text-shadow: #1f1d1f 5px 5px 7px;
+  font-size: 24px;
   color: #ffffff;
-  margin-top: 350px;
+  margin-top: 450px;
   text-align: center;
 }
 
