@@ -56,6 +56,11 @@
   margin: 100px 16px;
 }
 
+.welcom-text-homepage h2,
+.travel-hacks-homepage-text h2 {
+  margin: 16px 0;
+}
+
 .subscribe-box-homepage {
   background-color: var(--main-green-light-colour);
 }

@@ -5,6 +5,12 @@
   margin: 80px 0;
 }
 
+.about-us-mia h2,
+.about-us-bob h2,
+.about-us-what-we-care-about h2 {
+  margin: 16px 0;
+}
+
 .about-us-image-box {
   display: flex;
   justify-content: center;
@@ -50,6 +56,10 @@
   }
   .about-us-bob {
     flex-direction: row-reverse;
+  }
+
+  .about-us-image-box img {
+    height: 240px;
   }
 
   .about-us-what-we-care-about-img-box {
