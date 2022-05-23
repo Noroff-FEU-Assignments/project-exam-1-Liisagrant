@@ -41,13 +41,12 @@
 
 .full-img {
   position: absolute;
-  height: 60%;
+  height: 70%;
   top: 40%;
   left: 50%;
   border-radius: 15px;
   transform: translate(-50%, -50%) scale(0.5);
   transition: all 0.25s ease-out;
-  margin: 8px;
 }
 
 .full-img {
@@ -66,7 +65,7 @@
 
 @media screen and (min-width: 400px) {
   .full-img {
-    height: 80%;
+    height: 90%;
   }
 
   .modal p {
@@ -86,10 +85,14 @@
 
 @media screen and (min-width: 787px) {
   .full-img {
-    height: 120%;
+    height: 160%;
+    top: 50%;
   }
 
   .modal p {
-    bottom: 20%;
+    bottom: 10%;
+    background: black;
+    padding: 8px;
+    border-radius: 10px;
   }
 }

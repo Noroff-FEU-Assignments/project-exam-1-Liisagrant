@@ -13,7 +13,6 @@ const getPost = async () => {
     const response = await fetch(apiUrl);
     const post = await response.json();
     let data = post._embedded["wp:featuredmedia"];
-    console.log(post);
     for (img of data) {
       bredcrumbsTitle.innerHTML += `
                     <a href="#">${post.title.rendered}</a>

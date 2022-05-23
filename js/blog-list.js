@@ -10,7 +10,6 @@ const getAllBlogs = async () => {
   try {
     const response = await fetch(url);
     const blogPosts = await response.json();
-    console.log(blogPosts);
     for (blog of blogPosts) {
       let data = blog._embedded["wp:featuredmedia"];
       for (img of data) {
@@ -51,7 +50,6 @@ const getMorePost = async () => {
   try {
     const response = await fetch(urlLoadMore);
     const blogPosts = await response.json();
-    console.log(blogPosts);
     for (blog of blogPosts) {
       let data = blog._embedded["wp:featuredmedia"];
       for (img of data) {
@@ -89,9 +87,3 @@ loadMore.addEventListener("click", () => {
   getMorePost();
   loadMore.style.display = "none";
 });
-
-// const searchInput = document.querySelector("[data-search]");
-// let city = searchInput.addEventListener("input", (e) => {
-//   const value = e.target.value;
-//   console.log(value);
-// });
