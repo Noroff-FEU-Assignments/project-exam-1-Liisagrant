@@ -3,6 +3,7 @@
   --main-green-colour: #68a691;
   --main-yellow-color: #ffd670;
   --main-green-light-colour: #d0e9e2;
+  --main-pink-color: #c2949e;
 }
 
 .form-the-blog form {
@@ -67,26 +68,33 @@ input[type="search"]:focus {
   margin: 0 16px;
 }
 
-.date-post p {
-  font-size: 10px;
+.blog-date p {
+  font-size: 12px;
+  color: #444444;
   padding: 8px 0;
 }
 
-.read-more-link {
+.blog-author,
+.read-more-link a p {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
+}
+
+.blog-author {
   margin: 16px;
 }
 
-.read-more-link a {
+.read-more-link a p {
   font-size: 20px;
   text-decoration: underline;
+  padding: 8px;
+  transition: 1s;
 }
 
-.read-more-link a:hover {
-  border: 2px solid var(--main-green-colour);
-  padding: 8px;
-  border-radius: 15px;
+.read-more-link a p:hover {
+  text-decoration: underline var(--main-pink-color);
+  font-size: 22px;
+  transition: 1s;
 }
 
 .the-blog-load-more {

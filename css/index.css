@@ -16,11 +16,6 @@
 }
 
 .herobanner-background-image-homepage {
-  /* background-image: url("/image/herobanner-homepage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  background-position: 20% 80%; */
   position: relative;
   height: 600px;
   width: 100%;
@@ -34,7 +29,6 @@
   height: 600px;
   object-fit: cover;
   z-index: -1;
-  /* display: none; */
   opacity: 0;
   transition: opacity 12 ease-in-out;
 }
