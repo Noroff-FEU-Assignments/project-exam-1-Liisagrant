@@ -1,10 +1,3 @@
-:root {
-  --main-green-colour: #68a691;
-  --main-green-light-colour: #d0e9e2;
-  --main-yellow-color: #ffd670;
-  --main--error-colour: #962e2e;
-}
-
 .section-contact,
 .icon-box-success {
   display: flex;

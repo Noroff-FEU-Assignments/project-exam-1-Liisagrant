@@ -1,20 +1,3 @@
-:root {
-  --main-letter-colour: #444444;
-  --main-green-colour: #68a691;
-  --main-green-light-colour: #d0e9e2;
-  --main-dark-colour: #868181;
-  --main--error-colour: #962e2e;
-  --gradient: linear-gradient(
-    90deg,
-    #f0a1dc,
-    #eba3e5,
-    #eeabf7,
-    #e4c6db,
-    #ddf08a,
-    #eccd93
-  );
-}
-
 .herobanner-background-image-homepage {
   position: relative;
   height: 600px;

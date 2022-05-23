@@ -89,3 +89,9 @@ loadMore.addEventListener("click", () => {
   getMorePost();
   loadMore.style.display = "none";
 });
+
+// const searchInput = document.querySelector("[data-search]");
+// let city = searchInput.addEventListener("input", (e) => {
+//   const value = e.target.value;
+//   console.log(value);
+// });

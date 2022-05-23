@@ -1,5 +1,5 @@
 .the-post-box {
-  margin: 16px;
+  margin: 16px 16px 100px;
 }
 
 .the-post-box-image {
@@ -19,6 +19,10 @@
 
 .text-blog-post {
   margin: 16px;
+}
+
+.the-post-box p {
+  margin: 8px;
 }
 
 .modal {

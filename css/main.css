@@ -1,3 +1,23 @@
+:root {
+  --main-letter-colour: #444444;
+  --main-green-colour: #68a691;
+  --main-green-light-colour: #d0e9e2;
+  --main-dark-colour: #868181;
+  --main--error-colour: #962e2e;
+  --main-yellow-color: #ffd670;
+  --main-pink-color: #c2949e;
+  --main-dark-colour: #868181;
+  --gradient: linear-gradient(
+    90deg,
+    #f0a1dc,
+    #eba3e5,
+    #eeabf7,
+    #e4c6db,
+    #ddf08a,
+    #eccd93
+  );
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -23,16 +43,6 @@ a {
   font-family: "Mukta Vaani", sans-serif;
   font-size: 18px;
   color: var(--main-letter-colour);
-}
-
-:root {
-  --main-letter-colour: #444444;
-  --main-green-colour: #68a691;
-  --main-green-light-colour: #d0e9e2;
-  --main-yellow-color: #ffd670;
-  --main-pink-color: #c2949e;
-  --main-dark-colour: #868181;
-  /*--gradient:*/
 }
 
 .green {
