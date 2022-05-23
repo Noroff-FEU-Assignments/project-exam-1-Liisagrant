@@ -7,32 +7,25 @@
 .about-us-bob {
   display: flex;
   flex-direction: column;
-  margin: 80px 16px;
+  margin: 80px 0;
 }
 
 .about-us-image-box {
   display: flex;
-  background-color: var(--main-green-colour);
   justify-content: center;
   align-items: center;
   margin: auto auto;
-  border-radius: 50%;
+  border-radius: 15%;
 }
 
 .about-us-image-box img {
-  height: 200px;
-  padding: 16px;
-  border-radius: 50%;
+  height: 240px;
+  border-radius: 15%;
 }
 
 .about-us-mia-text,
 .about-us-what-we-care-about {
   margin: 16px;
-}
-
-.about-us-mia-text p,
-.about-us-what-we-care-about p {
-  margin: 8px 0;
 }
 
 .about-us-what-we-care-about-img-box {
@@ -49,7 +42,7 @@
 
 @media screen and (min-width: 426px) {
   .about-us-what-we-care-about img {
-    height: 300px;
+    height: 280px;
   }
 }
 

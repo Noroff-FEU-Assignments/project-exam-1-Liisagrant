@@ -62,14 +62,17 @@ const getMorePost = async () => {
                         <div class="blog-post-title">
                             <h2>${blog.title.rendered}</h2>
                         </div>
-                        <div class="date-post">
-                            <p>${blog.date}</p>
-                        </div>
                         <div class="short-description">
                             <p>${img.caption.rendered}</p>
                         </div>
+                        <div class="blog-date">
+                          <p>${blog.acf.date}<p>
+                        <div>
+                        <div class="blog-author">
+                          <p>Author: ${blog.acf.author}<p>
+                        </div>
                         <div class="read-more-link">
-                            <a href="the-post.html?id=${blog.id}""><p>Read More</p></a>
+                            <a href="the-post.html?id=${blog.id}""><p>Click here to read more</p></a>
                         </div>
                     </div>
                 `;

@@ -1,5 +1,4 @@
 :root {
-  --main-letter-colour: #444444;
   --main-green-colour: #68a691;
   --main-green-light-colour: #d0e9e2;
   --main-yellow-color: #ffd670;
@@ -39,10 +38,6 @@
 
 .success a {
   text-decoration: underline;
-}
-
-.fab {
-  color: #fff;
 }
 
 .success .fa-facebook {
