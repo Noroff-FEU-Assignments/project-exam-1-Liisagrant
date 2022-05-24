@@ -55,14 +55,24 @@ const size = carouselContainer.clientWidth;
 
 blogPostSlide.style.tranform = "translateX(" + -size * counter + "px)";
 
+// const reLoadePage = () => {
+//   if (size === 320) {
+//     window.location.reload();
+//   } else if (size === 650) {
+//     window.location.reload();
+//   } else if (size === 987) {
+//     window.location.reload();
+//   }
+// };
+
 const getCarouselNext = () => {
-  if (carouselContainer.clientWidth === 320 && counter >= 11) {
+  if (size === 320 && counter >= 11) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
-  } else if (carouselContainer.clientWidth === 650 && counter >= 5) {
+  } else if (size === 650 && counter >= 5) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
-  } else if (carouselContainer.clientWidth === 987 && counter >= 3) {
+  } else if (size === 987 && counter >= 3) {
     counter = -1;
     blogPostSlide.style.transform = "translateX(0px)";
   }
@@ -76,13 +86,13 @@ nextBtn.addEventListener("click", () => {
 });
 
 const getCarouselBack = () => {
-  if (carouselContainer.clientWidth === 320 && counter <= 0) {
+  if (size === 320 && counter <= 0) {
     counter = 10;
     blogPostSlide.style.transform = "translateX(0px)";
-  } else if (carouselContainer.clientWidth === 650 && counter <= 0) {
+  } else if (size === 650 && counter <= 0) {
     counter = 4;
     blogPostSlide.style.transform = "translateX(0px)";
-  } else if (carouselContainer.clientWidth === 987 && counter <= 0) {
+  } else if (size === 987 && counter <= 0) {
     counter = 2;
     blogPostSlide.style.transform = "translateX(0px)";
   }
