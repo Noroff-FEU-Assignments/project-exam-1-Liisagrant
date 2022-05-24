@@ -3,7 +3,7 @@ const url =
 const urlLoadMore =
   "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true&per_page=10&offset=10";
 const blogPostsContainer = document.querySelector(".all-blog-posts");
-const loadMore = document.querySelector("#blog-btn");
+const loadMoreBtn = document.querySelector("#blog-btn");
 const loader = document.querySelector(".loader");
 
 // let filterTitle = [];
@@ -99,7 +99,7 @@ const getMorePost = async () => {
   }
 };
 
-loadMore.addEventListener("click", () => {
+loadMoreBtn.addEventListener("click", () => {
   getMorePost();
-  loadMore.style.display = "none";
+  loadMoreBtn.style.display = "none";
 });
