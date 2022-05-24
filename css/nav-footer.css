@@ -139,12 +139,6 @@ footer p {
     justify-content: space-between;
   }
 
-  .logo svg {
-    height: 80px;
-    width: 90px;
-    padding: 10px 0 0 10px;
-  }
-
   #mobile-menu-btn {
     display: block;
   }

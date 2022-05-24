@@ -6,7 +6,7 @@ const emailError = document.querySelector("#email-error p");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subject-error p");
 const message = document.querySelector("#message");
-const messegeError = document.querySelector("#messege-error p");
+const messegeError = document.querySelector("#message-error p");
 const succsess = document.querySelector(".success");
 
 const validationForm = (event) => {
