@@ -18,7 +18,7 @@ const validationForm = (event) => {
     nameError.style.display = "block";
   }
 
-  if (validEmail(email.value, 5) === true) {
+  if (validEmail(email.value) === true) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";

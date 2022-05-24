@@ -113,6 +113,7 @@ footer a,
 i {
   padding: 5px;
   cursor: pointer;
+  color: #000000;
 }
 
 footer p {
@@ -124,6 +125,11 @@ footer p {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.fab:hover,
+.fab p:hover {
+  color: #ffffff;
 }
 
 .fab p {
