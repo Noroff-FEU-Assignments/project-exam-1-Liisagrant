@@ -106,7 +106,7 @@ input[type="search"]:focus {
   }
 
   .blog-post-box img {
-    width: 500px;
-    height: 333px;
+    width: 400px;
+    height: 100%;
   }
 }
