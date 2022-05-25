@@ -55,28 +55,28 @@ const size = carouselContainer.clientWidth;
 
 blogPostSlide.style.tranform = "translateX(" + -size * counter + "px)";
 
-const reLoadePage = () => {
-  var width = window.size;
-  var screen = "";
-  if (width < 650) {
-    screen = "small";
-  } else if (width < 987) {
-    screen = "medium";
-  } else if (width > 987) {
-    screen = "large";
-  }
-  // window.resize(function doit() {
-  //   var curWidth = window.width();
-  //   if (curWidth < 650 == "small") {
-  //     window.location.reload();
-  //   } else if (curWidth < 987 == "medium") {
-  //     window.location.reload();
-  //   } else if (curWidth > 987 == "large") {
-  //     window.location.reload();
-  //   }
-  // });
-};
-reLoadePage();
+// const reLoadePage = () => {
+//   var width = window.size;
+//   var screen = "";
+//   if (width < 650) {
+//     screen = "small";
+//   } else if (width < 987) {
+//     screen = "medium";
+//   } else if (width > 987) {
+//     screen = "large";
+//   }
+//   // window.resize(function doit() {
+//   //   var curWidth = window.width();
+//   //   if (curWidth < 650 == "small") {
+//   //     window.location.reload();
+//   //   } else if (curWidth < 987 == "medium") {
+//   //     window.location.reload();
+//   //   } else if (curWidth > 987 == "large") {
+//   //     window.location.reload();
+//   //   }
+//   // });
+// };
+// reLoadePage();
 
 const getCarouselNext = () => {
   if (size === 320 && counter >= 11) {
@@ -113,6 +113,10 @@ const getCarouselBack = () => {
   counter--;
   blogPostSlide.style.transform = "translateX(" + -size * counter + "px";
 };
+
+backBtn.addEventListener("click", () => {
+  getCarouselBack();
+});
 
 //Modal subscribe
 const modal = document.getElementById("modalSubscribe");

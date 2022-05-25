@@ -29,9 +29,10 @@ const getAllBlogs = async () => {
     for (blog of blogPosts) {
       let data = blog._embedded["wp:featuredmedia"];
       for (img of data) {
+        console.log(img);
         let post = `
                     <div class="blog-post-box">
-                            <img src="${img.source_url}" alt="${img.alt_tex}">
+                            <img src="${img.media_details.sizes.medium.source_url}" alt="${img.alt_tex}">
                         <div class="blog-post-text-box">
                         <div class="blog-post-title">
                             <h2>${blog.title.rendered}</h2>
