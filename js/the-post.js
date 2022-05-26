@@ -47,7 +47,7 @@ const getPost = async () => {
       `;
     }
   } catch {
-    postBox.innerHTML = `Sorry, we have a problem!`;
+    postBox.innerHTML = `<div class="error-text"><p>Sorry, we have an error</p></div>`;
   } finally {
     loader.style.display = "none";
   }

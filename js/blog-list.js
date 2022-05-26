@@ -39,7 +39,8 @@ const getAllBlogs = async () => {
       }
     }
   } catch {
-    blogPostsContainer.innerHTML = `Sorry, we have an error`;
+    blogPostsContainer.innerHTML = `<div class="error-text"><p>Sorry, we have an error</p></div>`;
+    loadMoreBtn.style.display = "none";
   } finally {
     loader.style.display = "none";
   }
@@ -79,7 +80,7 @@ const getMorePost = async () => {
       }
     }
   } catch {
-    blogPostsContainer.innerHTML = `Sorry, we have an error`;
+    blogPostsContainer.innerHTML = `<div class="error-text"><p>Sorry, we have an error</p></div>`;
   } finally {
   }
 };

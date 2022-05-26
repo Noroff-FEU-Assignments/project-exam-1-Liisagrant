@@ -141,3 +141,7 @@ input {
 .loader img {
   height: 100px;
 }
+
+.error-text p {
+  text-align: center;
+}
