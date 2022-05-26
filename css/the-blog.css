@@ -2,36 +2,6 @@
   display: flex;
 }
 
-.box-search {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 24px;
-}
-
-.fa-search {
-  color: var(--main-green-colour);
-  font-size: 150%;
-  height: 32px;
-  margin-top: 6px;
-}
-
-input[type="search"] {
-  width: 50%;
-  padding: 16px;
-  box-sizing: border-box;
-  outline: none;
-  resize: none;
-  border: none;
-  border-bottom: 2px solid var(--main-green-colour);
-  margin: 4px 0 8px 0;
-  resize: vertical;
-}
-
-input[type="search"]:focus {
-  border: 2px solid var(--main-yellow-color);
-}
-
 .all-blog-posts {
   display: flex;
   flex-direction: column;

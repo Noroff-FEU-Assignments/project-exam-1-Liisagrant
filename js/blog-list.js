@@ -6,22 +6,6 @@ const blogPostsContainer = document.querySelector(".all-blog-posts");
 const loadMoreBtn = document.querySelector("#blog-btn");
 const loader = document.querySelector(".loader");
 
-// let filterTitle = [];
-
-// const searchBar = document.getElementById("searchbar");
-// searchBar.addEventListener("keyup", (e) => {
-//   const searchString = searchBar.value;
-//   blogPostsContainer.innerHTML = "";
-//   filterTitle = getAllBlogs().filter(
-//     (blog) =>
-//       blog.title.rendered.toLowerCase().indexOf(searchString.toLowerCase()) !==
-//       -1
-//   );
-//   filterTitle.forEach((blog) => {
-//     blogPostsContainer.innerHTML += getAllBlogs(blog);
-//   });
-// });
-
 const getAllBlogs = async () => {
   try {
     const response = await fetch(url);
