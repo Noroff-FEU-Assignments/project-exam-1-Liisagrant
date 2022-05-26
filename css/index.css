@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-.slideshow {
+.slideshow-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,6 +14,10 @@
   z-index: -1;
   opacity: 0;
   transition: opacity 12 ease-in-out;
+}
+
+.slideshow-img span {
+  display: none;
 }
 
 .img1,

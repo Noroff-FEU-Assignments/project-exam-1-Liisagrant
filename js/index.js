@@ -6,6 +6,13 @@ const nextBtn = document.querySelector("#btn-next");
 const backBtn = document.querySelector("#btn-back");
 const loader = document.querySelector(".loader");
 const subscribeBox = document.querySelector(".subscribe-newsletter-homepage");
+const modal = document.getElementById("modalSubscribe");
+const nameError = document.querySelector(".error-input-name p");
+const emailError = document.querySelector(".error-input-email p");
+const email = document.getElementById("e-mail");
+const nameInput = document.getElementById("name");
+const modalBtn = document.getElementById("modalBTN");
+const slideImages = document.querySelectorAll(".slideshow-img");
 
 const getBlogPost = async () => {
   try {
@@ -16,11 +23,10 @@ const getBlogPost = async () => {
       for (img of data) {
         let newPost = `
             <a href="the-post.html?id=${blog.id}">
-                         <img class= "img-carousel" src="${img.media_details.sizes.medium_large.source_url}" alt="${img.alt_text}"/>
-                        <div class="text-slide-carousel">
-                            <h3>${img.title.rendered}</h3>
-                        </div>
-                </div>
+                  <img class= "img-carousel" src="${img.media_details.sizes.medium_large.source_url}" alt="${img.alt_text}"/>
+                    <div class="text-slide-carousel">
+                        <h3>${img.title.rendered}</h3>
+                    </div>
             </a>
             `;
         blogPostSlide.innerHTML += newPost;
@@ -36,7 +42,6 @@ const getBlogPost = async () => {
 getBlogPost();
 
 //hero-banner slider
-const slideImages = document.querySelectorAll(".slideshow");
 const nextImageDelay = 4000;
 let currentImgCounter = 0;
 
@@ -49,34 +54,10 @@ const nextImage = () => {
 slideImages[currentImgCounter].style.opacity = 1;
 setInterval(nextImage, nextImageDelay);
 
-//Carousel
+// Carousel;
 let counter = 0;
 const size = carouselContainer.clientWidth;
-
 blogPostSlide.style.tranform = "translateX(" + -size * counter + "px)";
-
-// const reLoadePage = () => {
-//   var width = window.size;
-//   var screen = "";
-//   if (width < 650) {
-//     screen = "small";
-//   } else if (width < 987) {
-//     screen = "medium";
-//   } else if (width > 987) {
-//     screen = "large";
-//   }
-//   // window.resize(function doit() {
-//   //   var curWidth = window.width();
-//   //   if (curWidth < 650 == "small") {
-//   //     window.location.reload();
-//   //   } else if (curWidth < 987 == "medium") {
-//   //     window.location.reload();
-//   //   } else if (curWidth > 987 == "large") {
-//   //     window.location.reload();
-//   //   }
-//   // });
-// };
-// reLoadePage();
 
 const getCarouselNext = () => {
   if (size === 320 && counter >= 11) {
@@ -119,13 +100,6 @@ backBtn.addEventListener("click", () => {
 });
 
 //Modal subscribe
-const modal = document.getElementById("modalSubscribe");
-const nameError = document.querySelector(".error-input-name p");
-const emailError = document.querySelector(".error-input-email p");
-const email = document.getElementById("e-mail");
-const nameInput = document.getElementById("name");
-const modalBtn = document.getElementById("modalBTN");
-
 modalBtn.onclick = (event) => {
   event.preventDefault();
   if (ValidEmail(email.value) === true) {
