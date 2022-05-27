@@ -28,10 +28,6 @@
   margin: 16px;
 }
 
-.about-us-what-we-care-about p {
-  font-size: 16px;
-}
-
 .about-us-what-we-care-about-img-box {
   display: flex;
   flex-direction: column;
