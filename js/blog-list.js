@@ -31,7 +31,7 @@ const getAllBlogs = async () => {
                           <p>Author: ${blog.acf.author}<p>
                         </div>
                         <div class="read-more-link">
-                            <a href="the-post.html?id=${blog.id}""><p>Click here to read more</p></a>
+                            <a href="the-post.html?id=${blog.id}"><p>Click here to read more</p></a>
                         </div>
                     </div>
                 `;
@@ -39,7 +39,7 @@ const getAllBlogs = async () => {
       }
     }
   } catch {
-    blogPostsContainer.innerHTML = `<div class="error-text"><p>Sorry, we have an error</p></div>`;
+    blogPostsContainer.innerHTML = `<div class="error-text-the-blog"><p>Sorry, we have an error</p></div>`;
     loadMoreBtn.style.display = "none";
   } finally {
     loader.style.display = "none";
@@ -80,7 +80,7 @@ const getMorePost = async () => {
       }
     }
   } catch {
-    blogPostsContainer.innerHTML = `<div class="error-text"><p>Sorry, we have an error</p></div>`;
+    blogPostsContainer.innerHTML = `<div class="error-text-the-blog><p>Sorry, we have an error</p></div>`;
   } finally {
   }
 };

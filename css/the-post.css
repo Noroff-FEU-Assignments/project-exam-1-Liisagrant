@@ -28,7 +28,7 @@
 .modal {
   display: none;
   flex-direction: column;
-  background: rgb(0, 0, 0, 0.8);
+  background: rgb(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   left: 0;
@@ -61,6 +61,22 @@
   bottom: 30%;
   left: 50%;
   transform: translate(-50%, -5%);
+}
+
+.close {
+  position: relative;
+  top: 10%;
+  left: 90%;
+  z-index: 1;
+  font-size: 35px;
+  color: #aaa;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 400px) {
