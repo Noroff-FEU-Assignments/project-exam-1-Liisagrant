@@ -2,7 +2,7 @@ const query = document.location.search;
 const param = new URLSearchParams(query);
 const id = param.get("id");
 
-const apiUrl = `https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts/${id}?_embed=true`;
+const apiUrl = `https://lisagrant-943890.ingress-baronn.ewp.live//wp-json/wp/v2/posts/${id}?_embed=true`;
 const postBox = document.querySelector(".the-post-box");
 const postImgBox = document.querySelector(".the-post-box-image");
 const bredcrumbsTitle = document.querySelector(".breadcrumbs-title");

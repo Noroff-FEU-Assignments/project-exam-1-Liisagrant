@@ -1,5 +1,7 @@
 const url =
-  "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true&per_page=12";
+  "https://lisagrant-943890.ingress-baronn.ewp.live/wp-json/wp/v2/posts?_embed=true&per_page=12";
+// "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true&per_page=12";
+
 const blogPostSlide = document.querySelector(".carousel-slide");
 const carouselContainer = document.querySelector(".carousel-container");
 const caruselError = document.querySelector(".carusel-box");

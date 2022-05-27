@@ -1,7 +1,7 @@
 const url =
-  "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true&per_page=10";
+  "https://lisagrant-943890.ingress-baronn.ewp.live/wp-json/wp/v2/posts?_embed=true&per_page=10";
 const urlLoadMore =
-  "https://lisagrant-943890.ingress-baronn.easywp.com/wp-json/wp/v2/posts?_embed=true&per_page=10&offset=10";
+  "https://lisagrant-943890.ingress-baronn.ewp.live/wp-json/wp/v2/posts?_embed=true&per_page=10&offset=10";
 const blogPostsContainer = document.querySelector(".all-blog-posts");
 const loadMoreBtn = document.querySelector("#blog-btn");
 const loader = document.querySelector(".loader");
