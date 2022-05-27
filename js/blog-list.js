@@ -13,7 +13,6 @@ const getAllBlogs = async () => {
     for (blog of blogPosts) {
       let data = blog._embedded["wp:featuredmedia"];
       for (img of data) {
-        console.log(img);
         let post = `
                     <div class="blog-post-box">
                             <img src="${img.media_details.sizes.medium.source_url}" alt="${img.alt_tex}">
@@ -45,7 +44,6 @@ const getAllBlogs = async () => {
     loader.style.display = "none";
   }
 };
-
 getAllBlogs();
 
 const getMorePost = async () => {
@@ -72,7 +70,7 @@ const getMorePost = async () => {
                           <p>Author: ${blog.acf.author}<p>
                         </div>
                         <div class="read-more-link">
-                            <a href="the-post.html?id=${blog.id}""><p>Click here to read more</p></a>
+                            <a href="the-post.html?id=${blog.id}"><p>Click here to read more</p></a>
                         </div>
                     </div>
                 `;

@@ -7,6 +7,7 @@ const postBox = document.querySelector(".the-post-box");
 const postImgBox = document.querySelector(".the-post-box-image");
 const bredcrumbsTitle = document.querySelector(".breadcrumbs-title");
 const loader = document.querySelector(".loader");
+const modal = document.querySelector(".modal");
 
 const getPost = async () => {
   try {
@@ -19,10 +20,10 @@ const getPost = async () => {
       `;
       postImgBox.innerHTML += `
                     <img 
-                    class= "img"
-                    onClick ="getModal()"
-                    src="${img.source_url}"
-                    alt="${img.alt_text}"
+                      class= "img"
+                      onClick ="getModal()"
+                      src="${img.source_url}"
+                      alt="${img.alt_text}"
                     />
       `;
 
@@ -31,11 +32,10 @@ const getPost = async () => {
                     <h1>${post.title.rendered}</h1>
                 </div>
                 <article>
-                            <p>${post.content.rendered}</p>
+                      <p>${post.content.rendered}</p>
                 </article>
-            </div> 
             `;
-      document.title = `${post.title.rendered} ||  Mia and Bobs Travel Blog`;
+      document.title = `${post.title.rendered} ||  Mia and Bob's Travel Blog`;
 
       modal.innerHTML += `
         <img
@@ -52,10 +52,7 @@ const getPost = async () => {
     loader.style.display = "none";
   }
 };
-
 getPost();
-
-const modal = document.querySelector(".modal");
 
 const getModal = () => {
   modal.style.display = "flex";
