@@ -60,7 +60,7 @@
   margin: 100px 16px;
 }
 
-.welcom-text-homepage h2,
+.welcome-text-homepage h2,
 .travel-hacks-homepage-text h2 {
   margin: 16px 0;
 }
@@ -109,6 +109,7 @@
 
 .img-modal {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("/image/modal-img.jpg");
@@ -123,11 +124,23 @@
   opacity: 80%;
 }
 
+.img-modal p,
+.img-modal span {
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+  background-color: #00000068;
+}
+
 .img-modal p {
   font-size: 50px;
   font-family: "Roboto Slab", serif;
   color: #ffffff;
   background-color: #00000068;
+}
+
+.img-modal span {
+  width: 100%;
+  padding: 20px;
 }
 
 @keyframes modal-animation {

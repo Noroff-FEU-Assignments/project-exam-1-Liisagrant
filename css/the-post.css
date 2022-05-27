@@ -8,6 +8,7 @@
   box-sizing: border-box;
   height: 300px;
   margin-top: 100px;
+  cursor: pointer;
 }
 
 .the-post-box-image img {
