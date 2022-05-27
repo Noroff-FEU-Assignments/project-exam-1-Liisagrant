@@ -71,10 +71,6 @@
 }
 
 @media screen and (min-width: 600px) {
-  .box-search {
-    justify-content: end;
-  }
-
   .blog-post-box img {
     width: 400px;
     height: 100%;

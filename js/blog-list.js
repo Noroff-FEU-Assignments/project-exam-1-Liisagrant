@@ -44,6 +44,7 @@ const getAllBlogs = async () => {
     loader.style.display = "none";
   }
 };
+
 getAllBlogs();
 
 const getMorePost = async () => {
