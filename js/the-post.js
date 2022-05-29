@@ -16,34 +16,34 @@ const getPost = async () => {
     let data = post._embedded["wp:featuredmedia"];
     for (img of data) {
       bredcrumbsTitle.innerHTML += `
-                    <a href="#">${post.title.rendered}</a>
+              <a href="#">${post.title.rendered}</a>
       `;
       postImgBox.innerHTML += `
-                    <img 
-                      class= "img"
-                      onClick ="getModal()"
-                      src="${img.source_url}"
-                      alt="${img.alt_text}"
-                    />
+              <img 
+                class= "img"
+                onClick ="getModal()"
+                src="${img.source_url}"
+                alt="${img.alt_text}"
+              />
       `;
 
       postBox.innerHTML += `
-                <div class="page-title">
-                    <h1>${post.title.rendered}</h1>
-                </div>
-                <article>
-                      <p>${post.content.rendered}</p>
-                </article>
-            `;
+              <div class="page-title">
+                  <h1>${post.title.rendered}</h1>
+              </div>
+              <article>
+                  <p>${post.content.rendered}</p>
+              </article>
+      `;
       document.title = `${post.title.rendered} ||  Mia and Bob's Travel Blog`;
 
       modal.innerHTML += `
-        <img
-          src="${img.source_url}"
-          alt="${img.alt_text}"
-          class="full-img"
-        />
-        <p class="caption">${img.title.rendered}</p>
+              <img
+                src="${img.source_url}"
+                alt="${img.alt_text}"
+                class="full-img"
+              />
+            <p class="caption">${img.title.rendered}</p>
       `;
     }
   } catch {

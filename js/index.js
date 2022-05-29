@@ -33,7 +33,7 @@ const getBlogPost = async () => {
         blogPostSlide.innerHTML += newPost;
       }
     }
-  } catch (error) {
+  } catch {
     caruselError.innerHTML = `<div class="error-text"><p>Sorry, we have an error and can not load slider. Working on it!</p></div>`;
   } finally {
     loader.style.display = "none";

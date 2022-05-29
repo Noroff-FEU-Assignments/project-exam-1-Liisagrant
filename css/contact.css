@@ -44,6 +44,10 @@
   color: #fffc00;
 }
 
+.success .fab p:hover {
+  color: var(--main-green-colour);
+}
+
 .container-form {
   background-color: var(--main-green-light-colour);
   margin: 48px 16px;

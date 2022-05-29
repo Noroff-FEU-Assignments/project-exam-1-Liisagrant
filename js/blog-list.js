@@ -15,22 +15,23 @@ const getAllBlogs = async () => {
       for (img of data) {
         let post = `
                     <div class="blog-post-box">
-                            <img src="${img.media_details.sizes.medium.source_url}" alt="${img.alt_tex}">
+                            <img src="${img.media_details.sizes.medium.source_url}" alt="${img.alt_tex}"/>
                         <div class="blog-post-text-box">
-                        <div class="blog-post-title">
+                          <div class="blog-post-title">
                             <h2>${blog.title.rendered}</h2>
-                        </div>
-                        <div class="short-description">
+                          </div>
+                          <div class="short-description">
                             <p>${img.caption.rendered}</p>
-                        </div>
-                        <div class="blog-date">
-                          <p>${blog.acf.date}<p>
-                        <div>
-                        <div class="blog-author">
-                          <p>Author: ${blog.acf.author}<p>
-                        </div>
-                        <div class="read-more-link">
+                          </div>
+                          <div class="blog-date">
+                            <p>${blog.acf.date}<p>
+                          <div>
+                          <div class="blog-author">
+                            <p>Author: ${blog.acf.author}<p>
+                          </div>
+                          <div class="read-more-link">
                             <a href="the-post.html?id=${blog.id}"><p>Click here to read more</p></a>
+                          </div>
                         </div>
                     </div>
                 `;
@@ -56,22 +57,23 @@ const getMorePost = async () => {
       for (img of data) {
         let post = `
                     <div class="blog-post-box">
-                            <img src="${img.source_url}" alt="${img.alt_tex}">
+                            <img src="${img.media_details.sizes.medium.source_url}" alt="${img.alt_tex}"/>
                         <div class="blog-post-text-box">
-                        <div class="blog-post-title">
+                          <div class="blog-post-title">
                             <h2>${blog.title.rendered}</h2>
-                        </div>
-                        <div class="short-description">
+                          </div>
+                          <div class="short-description">
                             <p>${img.caption.rendered}</p>
-                        </div>
-                        <div class="blog-date">
-                          <p>${blog.acf.date}<p>
-                        <div>
-                        <div class="blog-author">
-                          <p>Author: ${blog.acf.author}<p>
-                        </div>
-                        <div class="read-more-link">
+                          </div>
+                          <div class="blog-date">
+                            <p>${blog.acf.date}<p>
+                          <div>
+                          <div class="blog-author">
+                            <p>Author: ${blog.acf.author}<p>
+                          </div>
+                          <div class="read-more-link">
                             <a href="the-post.html?id=${blog.id}"><p>Click here to read more</p></a>
+                          </div>
                         </div>
                     </div>
                 `;
