@@ -1,11 +1,13 @@
-## Project Exam 1
+# RainyDays 
 
-## Goal
+![this is an image](https://roaring-marzipan-949090.netlify.app//image/screenshot.png)
 
-To put into practice the skills learned over your first year of studies.
+A simple overview of the use/purpose of the project.
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
+## Description
+This is my semester exam for year 2021-2022. I was assigned with making a blog. I could choose my self what kind of blog and content. 
+I decided on making a travel blog. the page had certain criteria that had to be met:
+You can choose the design and topics covered on the blog, but it should have at least the following pages:
 -	Home page
 -	About page
 -	List of blog posts
@@ -39,29 +41,18 @@ Please use JavaScript for validation, show error messages if the values in the t
 
 The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
 
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
 
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
+## Built With
 
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
+You can list a the tech stack that you've used over here
 
-## Level 1 Process
+- HTML5
+- CSS
+- JavaScript 
 
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
+## To Do
+-Improve slider
 
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
 
+## Contact
+[My LinkedIn page](https://www.linkedin.com/in/lisa-grant-61249221a/)
