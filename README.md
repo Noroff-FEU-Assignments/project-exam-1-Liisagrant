@@ -44,7 +44,7 @@ The content for your website will be stored on a WordPress installation used as 
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+You can list the tech stack that you've used over here
 
 - HTML5
 - CSS
@@ -56,3 +56,6 @@ You can list a the tech stack that you've used over here
 
 ## Contact
 [My LinkedIn page](https://www.linkedin.com/in/lisa-grant-61249221a/)
+
+## Feedback by Hesh is Done
+
