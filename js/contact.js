@@ -64,3 +64,5 @@ const validEmail = (email) => {
   const patternMatch = regEx.test(email);
   return patternMatch;
 };
+
+// Feedback Done by Hesh
