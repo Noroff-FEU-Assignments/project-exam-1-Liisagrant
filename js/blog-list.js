@@ -90,5 +90,3 @@ loadMoreBtn.addEventListener("click", () => {
   getMorePost();
   loadMoreBtn.style.display = "none";
 });
-
-// Feedback Done by Hesh
