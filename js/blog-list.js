@@ -81,8 +81,7 @@ const getMorePost = async () => {
       }
     }
   } catch {
-    blogPostsContainer.innerHTML = `<div class="error-text-the-blog><p>Sorry, we have an error</p></div>`;
-  } finally {
+    blogPostsContainer.innerHTML = `<p class="error-text-the-blog">Sorry, we have an error</p>`;
   }
 };
 

@@ -72,7 +72,6 @@ textarea {
   padding: 16px;
   box-sizing: border-box;
   outline: none;
-  resize: none;
   border: none;
   border-bottom: 2px solid var(--main-green-colour);
   margin: 4px 0 8px 0;
@@ -93,7 +92,7 @@ form button {
   width: 200px;
 }
 
-.error-form p {
+.error-form span {
   display: none;
   color: var(--main--error-colour);
   font-size: 12px;

@@ -1,13 +1,13 @@
 const form = document.querySelector("#contact-form");
 const fullName = document.querySelector("#name");
-const nameError = document.querySelector("#name-error p");
+const nameError = document.querySelector("#name-error span");
 const email = document.querySelector("#email");
-const emailError = document.querySelector("#email-error p");
+const emailError = document.querySelector("#email-error span");
 const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subject-error p");
+const subjectError = document.querySelector("#subject-error span");
 const message = document.querySelector("#message");
-const messegeError = document.querySelector("#message-error p");
-const succsess = document.querySelector(".success");
+const messageError = document.querySelector("#message-error span");
+const success = document.querySelector(".success");
 
 const validationForm = (event) => {
   event.preventDefault();
@@ -31,9 +31,9 @@ const validationForm = (event) => {
   }
 
   if (checkLength(message.value, 25) === true) {
-    messegeError.style.display = "none";
+    messageError.style.display = "none";
   } else {
-    messegeError.style.display = "block";
+    messageError.style.display = "block";
   }
 
   if (
@@ -45,7 +45,7 @@ const validationForm = (event) => {
     succsess.style.display = "block";
     form.style.display = "none";
   } else {
-    succsess.style.display = "none";
+    success.style.display = "none";
   }
 };
 

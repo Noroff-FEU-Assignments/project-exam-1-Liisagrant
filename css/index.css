@@ -1,7 +1,8 @@
-.herobanner-background-image-homepage {
+.hero-banner-background-image-homepage {
   position: relative;
   height: 600px;
   width: 100%;
+  background: rgb(128 128 128 /23%);
 }
 
 .slideshow-img {
@@ -13,7 +14,10 @@
   object-fit: cover;
   z-index: -1;
   opacity: 0;
-  transition: opacity 12 ease-in-out;
+  transition: opacity 4s ease-in-out;
+  -webkit-transition: opacity 4s ease-in-out;
+  -moz-transition: opacity 4s ease-in-out;
+  -o-transition: opacity 4s ease-in-out;
 }
 
 .slideshow-img span {
@@ -42,13 +46,14 @@
   background-position: 20% 80%;
 }
 
-.herobanner-text h1 {
+.hero-banner-text h1 {
   font-family: "Oleo Script Swash Caps", cursive;
   text-shadow: #1f1d1f 5px 5px 7px;
   font-size: 24px;
   color: #ffffff;
-  margin-top: 450px;
+  margin-top: 50%;
   text-align: center;
+  padding-bottom: 250px;
 }
 
 .subscribe-newsletter-homepage {
@@ -88,7 +93,6 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #000000;
   background-color: #00000066;
 }
 
@@ -98,7 +102,6 @@
   background-size: 300%;
   background-image: var(--gradient);
   animation: modal-animation 4s infinite;
-  margin: auto;
   border: 2px solid var(--main-pink-color);
   max-width: 500px;
   border-radius: 4px;
@@ -155,7 +158,7 @@
   }
 }
 
-.carusel-box {
+.carousel-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,7 +168,7 @@
   position: relative;
 }
 
-.carusel-box h2 {
+.carousel-box h2 {
   margin: 16px;
 }
 
@@ -252,19 +255,30 @@
   display: none;
 }
 
-@media screen and (min-width: 700px) {
-  .carousel-container {
-    width: 650px;
+@media screen and (min-width: 500px) {
+  .hero-banner-text h1 {
+    padding-bottom: 50px;
   }
 }
 
-@media screen and (min-width: 650px) {
-  .herobanner-text h1 {
-    font-size: 50px;
+@media screen and (min-width: 500px) {
+  .hero-banner-text h1 {
+    margin-top: 40%;
+    padding-bottom: 200px;
   }
+}
+
+@media screen and (min-width: 630px) {
+  .hero-banner-text h1 {
+    font-size: 50px;
+    margin-top: 15%;
+    padding-bottom: 300px;
+  }
+
   .img-carousel {
     margin: 18px;
   }
+
   #btn-next {
     right: -1%;
   }
@@ -274,7 +288,22 @@
   }
 }
 
+@media screen and (min-width: 700px) {
+  .hero-banner-text h1 {
+    padding-bottom: 250px;
+  }
+
+  .carousel-container {
+    width: 650px;
+  }
+}
+
 @media screen and (min-width: 987px) {
+  .hero-banner-text h1 {
+    margin-top: 20%;
+    padding-bottom: 200px;
+  }
+
   .carousel-container {
     width: 987px;
   }

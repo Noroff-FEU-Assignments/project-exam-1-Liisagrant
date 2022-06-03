@@ -2,7 +2,7 @@ const url =
   "https://lisagrant-943890.ingress-baronn.ewp.live/wp-json/wp/v2/posts?_embed=true&per_page=12";
 const blogPostSlide = document.querySelector(".carousel-slide");
 const carouselContainer = document.querySelector(".carousel-container");
-const caruselError = document.querySelector(".carusel-box");
+const carouselError = document.querySelector(".carousel-box");
 const nextBtn = document.querySelector("#btn-next");
 const backBtn = document.querySelector("#btn-back");
 const loader = document.querySelector(".loader");
@@ -34,7 +34,7 @@ const getBlogPost = async () => {
       }
     }
   } catch {
-    caruselError.innerHTML = `<div class="error-text"><p>Sorry, we have an error and can not load slider. Working on it!</p></div>`;
+    carouselError.innerHTML = `<p class="error-text" >Sorry, we have an error and can not load slider. Working on it!</p>`;
   } finally {
     loader.style.display = "none";
   }
