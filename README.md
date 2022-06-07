@@ -57,5 +57,3 @@ You can list the tech stack that you've used over here
 ## Contact
 [My LinkedIn page](https://www.linkedin.com/in/lisa-grant-61249221a/)
 
-## Feedback by Hesh is Done
-
