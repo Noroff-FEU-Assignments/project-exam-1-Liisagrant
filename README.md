@@ -5,8 +5,7 @@
 A simple overview of the use/purpose of the project.
 
 ## Description
-This is my semester exam for year 2021-2022. I was assigned with making a blog. I could choose my self what kind of blog and content. 
-I decided on making a travel blog. the page had certain criteria that had to be met:
+This was my semester exam for the years 2021-2022. I was assigned with making a blog. I could choose myself what kind of blog and content. I decided on making a travel blog. The page had certain criteria that had to be met:
 You can choose the design and topics covered on the blog, but it should have at least the following pages:
 -	Home page
 -	About page
@@ -56,6 +55,4 @@ You can list the tech stack that you've used over here
 
 ## Contact
 [My LinkedIn page](https://www.linkedin.com/in/lisa-grant-61249221a/)
-
-## Feedback by Hesh is Done
 
