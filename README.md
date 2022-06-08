@@ -1,6 +1,6 @@
 # Project Exam 
 
-![this is an image](https://roaring-marzipan-949090.netlify.app//image/screenshot)
+![this is an image](https://roaring-marzipan-949090.netlify.app//image/screenshot.png)
 
 
 ## Description
