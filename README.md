@@ -1,8 +1,7 @@
 # Project Exam 
 
-![this is an image](https://roaring-marzipan-949090.netlify.app//image/screenshot.png)
+![this is an image](https://roaring-marzipan-949090.netlify.app//image/screenshot)
 
-A simple overview of the use/purpose of the project.
 
 ## Description
 This was my semester exam for the years 2021-2022. I was assigned with making a blog. I could choose myself what kind of blog and content. I decided on making a travel blog. The page had certain criteria that had to be met:
@@ -42,8 +41,6 @@ The content for your website will be stored on a WordPress installation used as 
 
 
 ## Built With
-
-You can list the tech stack that you've used over here
 
 - HTML5
 - CSS
