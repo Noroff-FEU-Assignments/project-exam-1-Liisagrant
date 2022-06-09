@@ -46,10 +46,22 @@ The content for your website will be stored on a WordPress installation used as 
 - CSS
 - JavaScript 
 
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:Noroff-FEU-Assignments/project-exam-1-Liisagrant.git
+```
+
+### Running
+Run with liveserver
+
 ## To Do
 -Improve slider
 
 
 ## Contact
 [My LinkedIn page](https://www.linkedin.com/in/lisa-grant-61249221a/)
-
